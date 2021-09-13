@@ -1,0 +1,231 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Public Sans', sans-serif;
+    font-size: $font-med;
+    font-weight: 300;
+    background-color: $white;
+    color: $white;
+    line-height: 1.3;
+    overflow-x: hidden;
+
+    @include breakpoint-up(large) {
+        font-size: $font-lg;
+    }
+
+    // Don't allow scrolling when toggled.
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 2.25rem;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+    line-height: 1.15;
+    color: $white;
+    margin-top: 0px;
+}
+
+h1 {
+    font-size: 2.31rem;
+    margin-bottom: 1.5rem;
+
+    @include breakpoint-up(large) {
+        font-size: $font-xl;
+    }
+}
+
+h2 {
+    font-size: 1.875rem;
+    margin-bottom: 1.5625rem;
+
+    @include breakpoint-up(large) {
+        font-size: 2.25rem;
+        margin-bottom: 2.25rem;
+    }
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+// Spacing
+.container {
+    // max-width: 69.375rem;
+    // max-width: 75.375rem;
+    max-width: 85.375rem;
+    margin: 0 auto;
+    border: 0;
+
+    // Padding modifiers
+    &--pxy {
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+        @include breakpoint-up(large) {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+    }
+
+    &--py {
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem;
+
+        @include breakpoint-up(large) {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+    }
+
+    &--px {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    &--pt {
+        padding-top: 4.375rem;
+
+        @include breakpoint-up(large) {
+            padding-top: 6rem;
+        }
+    }
+
+    &--pr {
+        padding-right: 1.5rem;
+    }
+
+    &--pb {
+        padding-bottom: 4.375rem;
+
+        @include breakpoint-up(large) {
+            padding-bottom: 6rem;
+        }
+    }
+
+    &--pl {
+        padding-left: 1.5rem;
+    }
+}
+
+// Flex Styles
+.flex {
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-jc-se {
+        justify-content: space-evenly;
+    }
+
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
+
+    &-fr-n {
+        flex-wrap: nowrap;
+    }
+}
+
+// Buttons
+button,
+.button {
+    display: inline-block;
+    padding: 0.775rem 1.7875rem;
+    // background: linear-gradient(to right, $roseRed, $darkBlue);
+    background: $darkBrown;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    color: $white;
+    font-weight: 400;
+    font-size: $font-sm;
+    transition: opacity 300ms ease-in-out;
+
+    &:hover {
+        opacity: 0.75;
+        color: rgba(255, 255, 255, 1);
+        box-shadow: 0 5px 15px rgba(255, 34, 53, 0.4);
+    }
+}
+
+.divider {
+    border-bottom: 1px solid $veryLightBrown;
+    margin-top: 25px;
+}
+
+.center-link {
+    text-align: center;
+
+    a {
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+.scrollup-btn {
+    width: 100px;
+    // padding: 0.775rem 1.7875rem;
+    // background: linear-gradient(to right, $roseRed, $darkBlue);
+    background: $darkBrown;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    color: $white;
+    font-weight: 400;
+    font-size: $font-sm;
+    transition: opacity 300ms ease-in-out;
+
+    &:hover {
+        opacity: 0.75;
+        color: rgba(255, 255, 255, 1);
+        box-shadow: 0 5px 15px rgba(255, 34, 53, 0.4);
+    }
+}
+
+
+// Visibility
+.hide-for-mobile {
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    @include breakpoint-up(large) {
+        display: none;
+    }
+}
+
+ion-icon {
+    font-size: 18px;
+    vertical-align: middle;
+}

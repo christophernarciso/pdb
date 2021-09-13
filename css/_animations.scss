@@ -1,0 +1,102 @@
+.has-fade {
+  visibility: hidden;
+}
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+// Helper classes
+.fade-in {
+  animation: fade-in 250ms ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fade-out 250ms ease-in-out forwards;
+}
+
+
+@keyframes wipe-enter {
+  0% {
+    transform: scale(0, .025);
+  }
+
+  50% {
+    transform: scale(1, .025);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .expand-animation {
+    animation: wipe-enter 3s 1;
+  }
+}
+
+
+@keyframes shake-animation {
+  0% {
+    transform: translate(0, 0)
+  }
+
+  1.78571% {
+    transform: translate(5px, 0)
+  }
+
+  3.57143% {
+    transform: translate(0, 0)
+  }
+
+  5.35714% {
+    transform: translate(5px, 0)
+  }
+
+  7.14286% {
+    transform: translate(0, 0)
+  }
+
+  8.92857% {
+    transform: translate(5px, 0)
+  }
+
+  10.71429% {
+    transform: translate(0, 0)
+  }
+
+  100% {
+    transform: translate(0, 0)
+  }
+}
+
+.shake {
+  animation: shake-animation 4.72s ease infinite;
+}
