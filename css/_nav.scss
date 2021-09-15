@@ -12,7 +12,7 @@
     padding: 8px 10px;
     border-radius: 3px;
     background-color: transparent;
-    color: black;
+    color: $darkBrown;
     text-transform: uppercase;
     align-self: center;
     font-size: .7rem;
@@ -35,16 +35,6 @@
     }
 }
 
-.main-nav__logo-link {
-    line-height: 60px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-
-    @media (max-width: 768px) {
-        margin-left: 10px;
-    }
-}
 
 .main-nav {
     background: $wood;
@@ -68,7 +58,6 @@
             display: block;
             height: 0;
             overflow: hidden;
-
         }
 
         &--open {
@@ -77,6 +66,9 @@
         }
 
         &-item {
+            background-color: $wood;
+            position: relative;
+            z-index: 2;
             list-style: none;
 
             &-link {
@@ -111,6 +103,7 @@
 
             &--dropdown {
                 position: relative;
+                z-index: 2;
 
                 #{$this}__menu-item-link {
                     @media (min-width: 769px) {
@@ -145,7 +138,6 @@
                     background-color: #f0f0f0;
                     white-space: nowrap;
 
-                    z-index: 1;
 
                     @media (min-width: 769px) {
                         position: absolute;

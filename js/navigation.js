@@ -52,12 +52,12 @@ function toggleNav () {
     navBar.animate([{ height: '0' }, { height: menuHeight + 'px' }], {
       duration: 500,
       easing: 'ease-in-out'
-    })
+    });
   } else {
     navBar.animate([{ height: menuHeight + 'px' }, { height: '0' }], {
       duration: 500,
       easing: 'ease-in-out'
-    })
+    });
   }
 }
 
