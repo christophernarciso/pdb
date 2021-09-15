@@ -99,20 +99,20 @@
     }
 
     &__cta {
-        a {
-            color: $wood;
+        a, a:hover {
+            outline: none;
+            text-decoration: none;
+            color: $darkBrown;
         }
 
         @include breakpoint-up(large) {
             grid-area: cta;
-            text-align: right;
+            text-align: left;
             justify-self: end;
         }
 
-        a.button {
-            @include breakpoint-down(medium) {
-                margin-bottom: 1.875rem;
-            }
+        @include breakpoint-down(medium) {
+            margin-bottom: 2.875rem;
         }
     }
 

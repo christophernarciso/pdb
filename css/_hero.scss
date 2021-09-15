@@ -1,6 +1,6 @@
 .hero {
-    background-color: #fff;
-
+    background-color: $wood;
+    padding-bottom: 1rem;
     &__img {
         img {
             height: 100%;
@@ -12,6 +12,7 @@
     /* CAROUSEL CSS */
     .carousel {
         position: relative;
+        
     }
 
     .carousel::after {
@@ -111,7 +112,7 @@
         user-select: none;
         cursor: pointer;
         font-size: 50px;
-        color: white;
+        color: $wood;
         position: absolute;
         left: 0;
         padding: 15px;
