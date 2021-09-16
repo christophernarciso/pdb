@@ -1,4 +1,60 @@
 .story {
     background-color: $wood;
-    padding-bottom: 10rem;
+    font-size: $font-med;
+
+    h1 {
+        text-align: left;
+
+        @include breakpoint-down(medium) {
+            text-align: center;
+        }
+    }
+
+    &__intro {
+        font-weight: 300;
+        text-align: left;
+        width: 75%;
+
+        @include breakpoint-down(medium) {
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &__imageblock {
+        img {
+            height: 320px;
+            width: 320px;
+        }
+    }
+
+    &__testimonial {
+        h3 {
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+
+    .testbg {
+        background-color: $white;
+    }
+
+    .carousel-indicators {
+        bottom: -80px;
+        li {
+            background-color: $veryLightBrown;
+        }
+
+        @include breakpoint-down(small) {
+            bottom: -150px;
+        }
+    }
+
+    .carousel-icon {
+        ion-icon {
+            color: $veryLightBrown;
+            font-size: $font-xl;
+        }
+    }
+
 }

@@ -49,7 +49,7 @@
     .carousel ul li {
         min-width: 100%;
         list-style: none;
-        background: url('/images/wings.jpg') center center / cover no-repeat;
+        background: url('/images/slice.jpg') center center / cover no-repeat;
         scroll-snap-align: start;
         display: flex;
         justify-content: center;
@@ -135,11 +135,11 @@
 
     /* DEMO CSS */
     .carousel ul li:nth-child(2) {
-        background-image: url('/images/ribs.jpg');
+        background-image: url('/images/wings.jpg');
     }
 
     .carousel ul li:nth-child(3) {
-        background-image: url('/images/smoker.jpg');
+        background-image: url('/images/offbone.jpg');
     }
 
 }

@@ -687,7 +687,7 @@ ion-icon {
 .hero .carousel ul li {
   min-width: 100%;
   list-style: none;
-  background: url("/images/wings.jpg") center center/cover no-repeat;
+  background: url("/images/slice.jpg") center center/cover no-repeat;
   scroll-snap-align: start;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -786,16 +786,72 @@ ion-icon {
 }
 
 .hero .carousel ul li:nth-child(2) {
-  background-image: url("/images/ribs.jpg");
+  background-image: url("/images/wings.jpg");
 }
 
 .hero .carousel ul li:nth-child(3) {
-  background-image: url("/images/smoker.jpg");
+  background-image: url("/images/offbone.jpg");
 }
 
 .story {
   background-color: #F9F9F8;
-  padding-bottom: 10rem;
+  font-size: 1.125rem;
+}
+
+.story h1 {
+  text-align: left;
+}
+
+@media (max-width: 63.9375em) {
+  .story h1 {
+    text-align: center;
+  }
+}
+
+.story__intro {
+  font-weight: 300;
+  text-align: left;
+  width: 75%;
+}
+
+@media (max-width: 63.9375em) {
+  .story__intro {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.story__imageblock img {
+  height: 320px;
+  width: 320px;
+}
+
+.story__testimonial h3 {
+  font-weight: 400;
+  text-align: center;
+}
+
+.story .testbg {
+  background-color: #F6F8F9;
+}
+
+.story .carousel-indicators {
+  bottom: -80px;
+}
+
+.story .carousel-indicators li {
+  background-color: #BC9060;
+}
+
+@media (max-width: 39.9375em) {
+  .story .carousel-indicators {
+    bottom: -150px;
+  }
+}
+
+.story .carousel-icon ion-icon {
+  color: #BC9060;
+  font-size: 3.25rem;
 }
 
 .footer {
@@ -923,9 +979,13 @@ ion-icon {
 
 .footer__links a:hover {
   color: #BC9060;
+  outline: none;
+  text-decoration: none;
+  border-bottom: solid 1px #BC9060;
 }
 
-.footer__cta a, .footer__cta a:hover {
+.footer__cta a,
+.footer__cta a:hover {
   outline: none;
   text-decoration: none;
   color: #50413A;

@@ -94,12 +94,17 @@
 
             &:hover {
                 color: $veryLightBrown;
+                outline: none;
+                text-decoration: none;
+                border-bottom: solid 1px $veryLightBrown;
             }
         }
     }
 
     &__cta {
-        a, a:hover {
+
+        a,
+        a:hover {
             outline: none;
             text-decoration: none;
             color: $darkBrown;

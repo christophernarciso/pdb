@@ -2,170 +2,251 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./dist/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/style.css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- More Metadata -->
-    <title>Papa Diesel's BBQ</title>
-    <meta property="og:description" content="" />
-    <meta name="keywords" content="" />
+  <!-- More Metadata -->
+  <title>Papa Diesel's BBQ</title>
+  <meta property="og:description" content="" />
+  <meta name="keywords" content="" />
 </head>
 
 <body>
-    <header class="header">
-        <nav class="container main-nav">
-            <div class="main-nav__heading">
-                <div class="main-nav__logo">
-                    <a href="/"><img src="./images/navlogo.png" width="100" height="100" alt="PDB Logo" /></a>
-                    <strong class="brand">Papa Diesel's BBQ</strong>
-                </div>
-                <button id="toggle-nav">
-                    <div class="hide-for-desktop">
-                        <ion-icon name="menu-outline" color="black"></ion-icon>
-                    </div>
-                </button>
-            </div>
-
-            <ul class="main-nav__menu">
-                <li class="main-nav__menu-item">
-                    <a class="main-nav__menu-item-link" href="#">Home</a>
-                </li>
-
-                <li class="main-nav__menu-item">
-                    <a class="main-nav__menu-item-link" href="#">About</a>
-                </li>
-
-                <li class="main-nav__menu-item">
-                    <a class="main-nav__menu-item-link" href="#">Menu</a>
-                </li>
-
-                <li class="main-nav__menu-item main-nav__menu-item--dropdown">
-                    <span class="main-nav__menu-item-link">Services</span>
-                    <ul class="main-nav__sub-menu">
-                        <li class="main-nav__sub-menu-item">
-                            <a class="main-nav__sub-menu-item-link" href="#">Catering</a>
-                        </li>
-                        <li class="main-nav__sub-menu-item">
-                            <a class="main-nav__sub-menu-item-link" href="#">Preorder</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="main-nav__menu-item">
-                    <a class="main-nav__menu-item-link" href="#">Contact</a>
-                </li>
-
-                <li class="main-nav__menu-item">
-                    <a class="main-nav__menu-item-link" href="#">
-                        <span class="hide-for-mobile">&nbsp;&nbsp;</span>
-                        <ion-icon name="logo-instagram"></ion-icon><span class="hide-for-desktop">&nbsp;&nbsp; Visit us
-                            on Instagram!</span>
-                    </a>
-                </li>
-
-                <li class="main-nav__menu-item">
-                    <a class="main-nav__menu-item-link" href="#">
-                        <ion-icon name="logo-facebook"></ion-icon><span class="hide-for-desktop">&nbsp;&nbsp; Visit us
-                            on Facebook!</span>
-                    </a>
-                </li>
-
-                <li class="main-nav__menu-item">
-                    <a class="main-nav__menu-item-link" href="#">
-                        <ion-icon name="logo-twitter"></ion-icon><span class="hide-for-desktop">&nbsp;&nbsp; Visit us on
-                            Twitter!</span>
-                    </a>
-                </li>
-
-                <li class="main-nav__menu-item">
-                    <a class="main-nav__menu-item-link" href="#">
-                        <ion-icon name="logo-youtube"></ion-icon><span class="hide-for-desktop">&nbsp;&nbsp; View us on
-                            YouTube!</span>
-                    </a>
-                </li>
-
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Slider section -->
-    <section class="hero container">
-        <div class="carousel" duration="7000">
-            <ul>
-                <li id="c1_slide1">
-                    <div>Papa Diesel's BBQ<br /><a href="#story">Learn More</a></div>
-                </li>
-                <li id="c1_slide2">
-                    <div>Picture 2<br /><a href="#">Click Here</a></div>
-                </li>
-                <li id="c1_slide3">
-                    <div>Picture 3<br /><a href="#">Click Here</a></div>
-                </li>
-            </ul>
-            <ol>
-                <li><a href="#c1_slide1"></a></li>
-                <li><a href="#c1_slide2"></a></li>
-                <li><a href="#c1_slide3"></a></li>
-            </ol>
-            <div class="prev">&lsaquo;</div>
-            <div class="next">&rsaquo;</div>
+  <header class="header">
+    <nav class="container main-nav">
+      <div class="main-nav__heading">
+        <div class="main-nav__logo">
+          <a href="/"><img src="./images/navlogo.png" width="100" height="100" alt="PDB Logo" /></a>
+          <strong class="brand">Papa Diesel's BBQ</strong>
         </div>
-    </section>
+        <button id="toggle-nav">
+          <div class="hide-for-desktop">
+            <ion-icon name="menu-outline" color="black"></ion-icon>
+          </div>
+        </button>
+      </div>
 
-    <!-- Our story section -->
-    <section class="story container" id="story">
-        <div class="container">
-            <h1>Our Story</h1>
-        </div>
-    </section>
+      <ul class="main-nav__menu">
+        <li class="main-nav__menu-item">
+          <a class="main-nav__menu-item-link" href="#">Home</a>
+        </li>
 
-    <!-- Site footer -->
-    <footer class="footer container">
-        <div class="container">
-          <a class="footer__logo" href="/">
-            <img src="./images/navlogo.png" width="100" height="100" alt="PDB Logo" />
+        <li class="main-nav__menu-item">
+          <a class="main-nav__menu-item-link" href="#">About</a>
+        </li>
+
+        <li class="main-nav__menu-item">
+          <a class="main-nav__menu-item-link" href="#">Menu</a>
+        </li>
+
+        <li class="main-nav__menu-item main-nav__menu-item--dropdown">
+          <span class="main-nav__menu-item-link">Services</span>
+          <ul class="main-nav__sub-menu">
+            <li class="main-nav__sub-menu-item">
+              <a class="main-nav__sub-menu-item-link" href="#">Catering</a>
+            </li>
+            <li class="main-nav__sub-menu-item">
+              <a class="main-nav__sub-menu-item-link" href="#">Preorder</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="main-nav__menu-item">
+          <a class="main-nav__menu-item-link" href="#">Contact</a>
+        </li>
+
+        <li class="main-nav__menu-item">
+          <a class="main-nav__menu-item-link" href="#">
+            <span class="hide-for-mobile">&nbsp;&nbsp;</span>
+            <ion-icon name="logo-instagram"></ion-icon><span class="hide-for-desktop">&nbsp;&nbsp; Visit us
+              on Instagram!</span>
           </a>
-  
-          <div class="footer__social">
-            <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-                <title>Facebook</title>
-                <path
-                  fill="#50413A"
-                  d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z"
-                />
-              </svg>
-            </a>
-            <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
-                <title>YouTube</title>
-                <path
-                  fill="#50413A"
-                  d="M10.333 0c-5.522 0-10 4.478-10 10 0 5.523 4.478 10 10 10 5.523 0 10-4.477 10-10 0-5.522-4.477-10-10-10zm3.701 14.077c-1.752.12-5.653.12-7.402 0C4.735 13.947 4.514 13.018 4.5 10c.014-3.024.237-3.947 2.132-4.077 1.749-.12 5.651-.12 7.402 0 1.898.13 2.118 1.059 2.133 4.077-.015 3.024-.238 3.947-2.133 4.077zM8.667 8.048l4.097 1.949-4.097 1.955V8.048z"
-                />
-              </svg>
-            </a>
-            <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18">
-                <title>Twitter</title>
-                <path
-                  fill="#50413A"
-                  d="M20.667 2.797a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.804-2.27 8.22 8.22 0 01-2.606.996A4.096 4.096 0 0014.513.873c-2.649 0-4.595 2.472-3.997 5.038a11.648 11.648 0 01-8.457-4.287 4.109 4.109 0 001.27 5.478A4.086 4.086 0 011.47 6.59c-.045 1.901 1.317 3.68 3.29 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.834 2.85 8.25 8.25 0 01-6.075 1.7 11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.662-12.205a8.354 8.354 0 002.048-2.124z"
-                />
-              </svg>
-            </a>
-            <!-- <a href="#">
+        </li>
+
+        <li class="main-nav__menu-item">
+          <a class="main-nav__menu-item-link" href="#">
+            <ion-icon name="logo-facebook"></ion-icon><span class="hide-for-desktop">&nbsp;&nbsp; Visit us
+              on Facebook!</span>
+          </a>
+        </li>
+
+        <li class="main-nav__menu-item">
+          <a class="main-nav__menu-item-link" href="#">
+            <ion-icon name="logo-twitter"></ion-icon><span class="hide-for-desktop">&nbsp;&nbsp; Visit us on
+              Twitter!</span>
+          </a>
+        </li>
+
+        <li class="main-nav__menu-item">
+          <a class="main-nav__menu-item-link" href="#">
+            <ion-icon name="logo-youtube"></ion-icon><span class="hide-for-desktop">&nbsp;&nbsp; View us on
+              YouTube!</span>
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Slider section -->
+  <section class="hero container">
+    <div class="carousel" duration="7000">
+      <ul>
+        <li id="c1_slide1">
+          <div>Papa Diesel's BBQ<br /><a href="#story">Learn More</a></div>
+        </li>
+        <li id="c1_slide2">
+          <div>No Sauce Needed!<br /><a href="#story">Learn More</a></div>
+        </li>
+        <li id="c1_slide3">
+          <div>Papa Diesel's BBQ<br /><a href="#story">Learn More</a></div>
+        </li>
+      </ul>
+      <ol>
+        <li><a href="#c1_slide1"></a></li>
+        <li><a href="#c1_slide2"></a></li>
+        <li><a href="#c1_slide3"></a></li>
+      </ol>
+      <div class="prev">&lsaquo;</div>
+      <div class="next">&rsaquo;</div>
+    </div>
+  </section>
+
+  <!-- Our story section -->
+  <section class="story container"  id="story">
+    <div class="container container--pxy">
+      <h1>Our Story</h1>
+      <p class="story__intro">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dignissimos quos ut dicta, voluptate incidunt
+        assumenda ullam velit sint maxime a minima quo commodi ex fuga odio accusamus sequi minus! Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Nulla dolore id enim odit magnam eos maxime error, amet fugiat praesentium
+        quos perspiciatis architecto corrupti fuga cumque ullam cupiditate! Corrupti, tenetur.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ullam itaque nostrum, numquam nihil hic.
+        Libero, aliquid. Quae error nisi quos necessitatibus magni iste nostrum id, quam dicta suscipit excepturi.
+      </p>
+      <div class="container container--pxy flex flex-jc-c flex-ai-c">
+        <div class="story__imageblock">
+          <img src="./images/truck.jpg" />
+          <img src="./images/slice.jpg" />
+          <img src="./images/smoker.jpg" />
+        </div>
+      </div>
+      <div class="story__testimonial container container--px">
+        <h3>What Our Customers Think</h3>
+        <div class="testbg container container--pb">
+          <div class="col-lg-10 offset-lg-1 pt-5 pb-5 text-dark">
+            <div id="client-testimonial-carousel" class="carousel slide" data-ride="carousel" style="height:200px;">
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active text-center p-4">
+                  <blockquote class="blockquote text-center">
+                    <span class="carousel-icon"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></span>
+                    <p class="mb-0">Everybody is a genius. But if you judge a fish by
+                      its ability to climb a tree, it will live its whole life believing that it is stupid.
+                    </p>
+                    <footer class="blockquote-footer">Albert Einstein <cite title="Source Title">genius</cite></footer>
+                    <!-- Client review stars -->
+                    <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
+                    <p class="client-review-stars">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </p>
+                  </blockquote>
+                </div>
+                <div class="carousel-item text-center p-4">
+                  <blockquote class="blockquote text-center">
+                    <span class="carousel-icon"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></span>
+                    <p class="mb-0">Imagination is more important than knowledge.
+                      Knowledge is limited. Imagination encircles the world.
+                    </p>
+                    <footer class="blockquote-footer">Albert Einstein <cite title="Source Title">genius</cite></footer>
+                    <!-- Client review stars -->
+                    <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
+                    <p class="client-review-stars">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </p>
+                  </blockquote>
+                </div>
+                <div class="carousel-item text-center p-4">
+                  <blockquote class="blockquote text-center">
+                    <span class="carousel-icon"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></span>
+                    <p class="mb-0">A person who never made a mistake never tried
+                      anything new.
+                    </p>
+                    <footer class="blockquote-footer">Albert Einstein <cite title="Source Title">genius</cite></footer>
+                    <!-- Client review stars -->
+                    <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
+                    <p class="client-review-stars">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
+              <ol class="carousel-indicators">
+                <li data-target="#client-testimonial-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#client-testimonial-carousel" data-slide-to="1"></li>
+                <li data-target="#client-testimonial-carousel" data-slide-to="2"></li>
+              </ol>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site footer -->
+  <footer class="footer container">
+    <div class="container">
+      <a class="footer__logo" href="/">
+        <img src="./images/navlogo.png" width="100" height="100" alt="PDB Logo" />
+      </a>
+
+      <div class="footer__social">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+            <title>Facebook</title>
+            <path fill="#50413A"
+              d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z" />
+          </svg>
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
+            <title>YouTube</title>
+            <path fill="#50413A"
+              d="M10.333 0c-5.522 0-10 4.478-10 10 0 5.523 4.478 10 10 10 5.523 0 10-4.477 10-10 0-5.522-4.477-10-10-10zm3.701 14.077c-1.752.12-5.653.12-7.402 0C4.735 13.947 4.514 13.018 4.5 10c.014-3.024.237-3.947 2.132-4.077 1.749-.12 5.651-.12 7.402 0 1.898.13 2.118 1.059 2.133 4.077-.015 3.024-.238 3.947-2.133 4.077zM8.667 8.048l4.097 1.949-4.097 1.955V8.048z" />
+          </svg>
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18">
+            <title>Twitter</title>
+            <path fill="#50413A"
+              d="M20.667 2.797a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.804-2.27 8.22 8.22 0 01-2.606.996A4.096 4.096 0 0014.513.873c-2.649 0-4.595 2.472-3.997 5.038a11.648 11.648 0 01-8.457-4.287 4.109 4.109 0 001.27 5.478A4.086 4.086 0 011.47 6.59c-.045 1.901 1.317 3.68 3.29 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.834 2.85 8.25 8.25 0 01-6.075 1.7 11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.662-12.205a8.354 8.354 0 002.048-2.124z" />
+          </svg>
+        </a>
+        <!-- <a href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                 <title>Pinterest</title>
                 <path
@@ -174,60 +255,65 @@
                 />
               </svg>
             </a> -->
-            <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
-                <title>Instagram</title>
-                <path
-                  fill="#50413A"
-                  d="M10.333 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.1 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.687-1.386 3.975-4.099 4.099-1.055.048-1.37.058-4.042.058-2.67 0-2.986-.01-4.04-.058-2.717-.124-3.976-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802C7.618 0 7.278.012 6.211.06 2.579.227.56 2.242.394 5.877.345 6.944.334 7.284.334 10s.011 3.057.06 4.123c.166 3.632 2.181 5.65 5.816 5.817 1.068.048 1.408.06 4.123.06 2.716 0 3.057-.012 4.124-.06 3.628-.167 5.651-2.182 5.816-5.817.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122C20.11 2.249 18.093.228 14.458.06 13.39.01 13.049 0 10.333 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.339-9.87a1.2 1.2 0 10-.001 2.4 1.2 1.2 0 000-2.4z"
-                />
-              </svg>
-            </a>
-          </div>
-  
-          <div class="footer__links col1">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Menu</a>
-          </div>
-  
-          <div class="footer__links col2">
-            <a href="#">Preorder</a>
-            <a href="#">Catering</a>
-            <a href="#">Contact</a>
-          </div>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
+            <title>Instagram</title>
+            <path fill="#50413A"
+              d="M10.333 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.1 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.687-1.386 3.975-4.099 4.099-1.055.048-1.37.058-4.042.058-2.67 0-2.986-.01-4.04-.058-2.717-.124-3.976-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802C7.618 0 7.278.012 6.211.06 2.579.227.56 2.242.394 5.877.345 6.944.334 7.284.334 10s.011 3.057.06 4.123c.166 3.632 2.181 5.65 5.816 5.817 1.068.048 1.408.06 4.123.06 2.716 0 3.057-.012 4.124-.06 3.628-.167 5.651-2.182 5.816-5.817.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122C20.11 2.249 18.093.228 14.458.06 13.39.01 13.049 0 10.333 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.339-9.87a1.2 1.2 0 10-.001 2.4 1.2 1.2 0 000-2.4z" />
+          </svg>
+        </a>
+      </div>
 
-          <div class="footer__cta">
-            <a href="tel:321-356-6385"><ion-icon name="call-outline"></ion-icon>&nbsp 321-356-6385</a>
-            <br>
-            <a href="mailto:PapaDieselsBbq@gmail.com"><ion-icon name="mail-outline"></ion-icon>&nbsp PapaDieselsBbq@gmail.com</a>
-            <br>
-            <span><ion-icon name="home-outline"></ion-icon>&nbsp 321 Montgomery Road<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAltamonte Springs Florida 32714</span>
-          </div>
-  
-          <div class="footer__copyright">
-            &copy; <span class="footer__year"></span> Papa Diesel's BBQ. All Rights Reserved.
-          </div>
-        </div>
-      </footer>
+      <div class="footer__links col1">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Menu</a>
+      </div>
+
+      <div class="footer__links col2">
+        <a href="#">Preorder</a>
+        <a href="#">Catering</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="footer__cta">
+        <a href="tel:321-356-6385">
+          <ion-icon name="call-outline"></ion-icon>&nbsp 321-356-6385
+        </a>
+        <br>
+        <a href="mailto:PapaDieselsBbq@gmail.com">
+          <ion-icon name="mail-outline"></ion-icon>&nbsp PapaDieselsBbq@gmail.com
+        </a>
+        <br>
+        <span>
+          <ion-icon name="home-outline"></ion-icon>&nbsp 321 Montgomery
+          Road<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAltamonte Springs Florida 32714
+        </span>
+      </div>
+
+      <div class="footer__copyright">
+        &copy; <span class="footer__year"></span> Papa Diesel's BBQ. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <script src="./js/init.js"></script>
-    <script src="./js/navigation.js"></script>
-    <script src="./js/slider.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="./js/init.js"></script>
+  <script src="./js/navigation.js"></script>
+  <script src="./js/slider.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
