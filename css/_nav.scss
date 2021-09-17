@@ -5,6 +5,7 @@
 
     @include breakpoint-down(small) {
         overflow: wrap;
+        display: none;
     }
 }
 

@@ -435,6 +435,7 @@ ion-icon {
 @media (max-width: 39.9375em) {
   .brand {
     overflow: wrap;
+    display: none;
   }
 }
 
@@ -821,6 +822,29 @@ ion-icon {
   }
 }
 
+.story__imageblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 63.9375em) {
+  .story__imageblock {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 .story__imageblock img {
   height: 320px;
   width: 320px;
@@ -852,6 +876,55 @@ ion-icon {
 .story .carousel-icon ion-icon {
   color: #BC9060;
   font-size: 3.25rem;
+}
+
+.activity {
+  background-color: #F9F9F8;
+  font-size: 1.125rem;
+  padding-bottom: 5rem;
+}
+
+.activity h1 {
+  text-align: left;
+}
+
+@media (max-width: 63.9375em) {
+  .activity h1 {
+    text-align: center;
+  }
+}
+
+.activity__intro {
+  font-weight: 300;
+  text-align: left;
+  width: 75%;
+}
+
+@media (max-width: 63.9375em) {
+  .activity__intro {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.activity__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 39.9375em) {
+  .activity__social {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .footer {

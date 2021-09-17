@@ -22,6 +22,15 @@
     }
 
     &__imageblock {
+        display: flex;
+        justify-content: center;
+
+        @include breakpoint-down(medium) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
         img {
             height: 320px;
             width: 320px;
