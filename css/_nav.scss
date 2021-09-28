@@ -2,7 +2,7 @@
     vertical-align: middle;
     font-size: 1.65rem;
     // color: $darkBrown;
-    color: $veryLightBrown;
+    color: $wood;
 
     @include breakpoint-down(small) {
         overflow: wrap;
@@ -129,7 +129,8 @@
                     position: absolute;
                     pointer-events: none;
                     border-color: transparent;
-                    border-top-color: #888;
+                    // border-top-color: #888;
+                    border-top-color: $orange;
                     border-width: 5px;
 
                     @media (max-width: 768px) {

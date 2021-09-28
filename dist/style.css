@@ -190,7 +190,7 @@ html {
 }
 
 body {
-  background: url("/images/smoker.jpg") no-repeat center center fixed;
+  background: url("/images/IMG_8028.jpg") no-repeat center center fixed;
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -429,7 +429,7 @@ ion-icon {
 .brand {
   vertical-align: middle;
   font-size: 1.65rem;
-  color: #BC9060;
+  color: #F9F9F8;
 }
 
 @media (max-width: 39.9375em) {
@@ -575,7 +575,7 @@ ion-icon {
   position: absolute;
   pointer-events: none;
   border-color: transparent;
-  border-top-color: #888;
+  border-top-color: #EF5226;
   border-width: 5px;
 }
 
@@ -687,7 +687,7 @@ ion-icon {
 .hero .carousel ul li {
   min-width: 100%;
   list-style: none;
-  background: url("/images/slice.jpg") center center/cover no-repeat;
+  background: url("/images/IMG_7887.jpg") center center/cover no-repeat;
   scroll-snap-align: start;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -786,11 +786,15 @@ ion-icon {
 }
 
 .hero .carousel ul li:nth-child(2) {
-  background-image: url("/images/wings.jpg");
+  background-image: url("/images/IMG_7872.jpg");
 }
 
 .hero .carousel ul li:nth-child(3) {
-  background-image: url("/images/offbone.jpg");
+  background-image: url("/images/IMG_7929.jpg");
+}
+
+.hero .carousel ul li:nth-child(4) {
+  background-image: url("/images/IMG_7968.jpg");
 }
 
 .story {
@@ -931,8 +935,6 @@ ion-icon {
   color: #F9F9F8;
   padding: 2.5rem;
   text-align: center;
-  border-top: solid 1px #8F1717;
-  border-radius: 10px;
 }
 
 @media (min-width: 64em) {
