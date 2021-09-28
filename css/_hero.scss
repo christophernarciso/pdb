@@ -49,7 +49,7 @@
     .carousel ul li {
         min-width: 100%;
         list-style: none;
-        background: url('/images/IMG_7887.jpg') center center / cover no-repeat;
+        background: url('../images/IMG_7887.jpg') center center / cover no-repeat;
         scroll-snap-align: start;
         display: flex;
         justify-content: center;
@@ -135,15 +135,15 @@
 
     /* DEMO CSS */
     .carousel ul li:nth-child(2) {
-        background-image: url('/images/IMG_7872.jpg');
+        background-image: url('../images/IMG_7872.jpg');
     }
 
     .carousel ul li:nth-child(3) {
-        background-image: url('/images/IMG_7929.jpg');
+        background-image: url('../images/IMG_7929.jpg');
     }
 
     .carousel ul li:nth-child(4) {
-        background-image: url('/images/IMG_7968.jpg');
+        background-image: url('../images/IMG_7968.jpg');
     }
 
 }
