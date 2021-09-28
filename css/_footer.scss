@@ -1,8 +1,12 @@
 .footer {
-    background-color: $wood;
-    color: $darkBrown;
+    // background-color: $wood;
+    background-color: $red;
+    // color: $darkBrown;
+    color: $wood;
     padding: 2.5rem;
     text-align: center;
+    border-top: solid 1px $red;
+    border-radius: 10px;
 
     .container {
         @include breakpoint-up(large) {
@@ -18,7 +22,8 @@
     }
 
     a {
-        color: $darkBrown;
+        // color: $darkBrown;
+        color: $wood;
     }
 
     &__logo {
@@ -48,6 +53,7 @@
             height: 1.25rem;
 
             svg path {
+                fill: $wood;
                 transition: fill 150ms ease-in-out;
             }
 
@@ -107,7 +113,8 @@
         a:hover {
             outline: none;
             text-decoration: none;
-            color: $darkBrown;
+            // color: $darkBrown;
+            color: $wood;
         }
 
         @include breakpoint-up(large) {
@@ -123,7 +130,8 @@
 
     &__copyright {
         font-size: 0.8125rem;
-        color: $darkBrown;
+        // color: $darkBrown;
+        color: $wood;
 
         @include breakpoint-up(large) {
             grid-area: copyright;
