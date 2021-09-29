@@ -10,6 +10,14 @@
         }
     }
 
+    .slogan {
+        text-align: left;
+
+        @include breakpoint-down(medium) {
+            text-align: center;
+        }
+    }
+
     &__intro {
         font-weight: 300;
         text-align: left;

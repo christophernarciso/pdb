@@ -190,8 +190,6 @@ html {
 }
 
 body {
-  background: url("../images/IMG_8028.jpg") no-repeat center center fixed;
-  background-size: cover;
   margin: 0;
   padding: 0;
   font-family: 'Public Sans', sans-serif;
@@ -200,6 +198,13 @@ body {
   color: #50413A;
   line-height: 1.3;
   overflow-x: hidden;
+}
+
+@media (min-width: 40em) {
+  body {
+    background: url("/images/IMG_8028.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
 }
 
 @media (min-width: 64em) {
@@ -687,7 +692,7 @@ ion-icon {
 .hero .carousel ul li {
   min-width: 100%;
   list-style: none;
-  background: url("../images/IMG_7887.jpg") center center/cover no-repeat;
+  background: url("/images/IMG_7887.jpg") center center/cover no-repeat;
   scroll-snap-align: start;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -786,15 +791,15 @@ ion-icon {
 }
 
 .hero .carousel ul li:nth-child(2) {
-  background-image: url("../images/IMG_7872.jpg");
+  background-image: url("/images/IMG_7872.jpg");
 }
 
 .hero .carousel ul li:nth-child(3) {
-  background-image: url("../images/IMG_7929.jpg");
+  background-image: url("/images/IMG_7929.jpg");
 }
 
 .hero .carousel ul li:nth-child(4) {
-  background-image: url("../images/IMG_7968.jpg");
+  background-image: url("/images/IMG_7968.jpg");
 }
 
 .story {
@@ -808,6 +813,16 @@ ion-icon {
 
 @media (max-width: 63.9375em) {
   .story h1 {
+    text-align: center;
+  }
+}
+
+.story .slogan {
+  text-align: left;
+}
+
+@media (max-width: 63.9375em) {
+  .story .slogan {
     text-align: center;
   }
 }
