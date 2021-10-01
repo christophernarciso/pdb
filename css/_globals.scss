@@ -10,6 +10,8 @@ html {
 }
 
 body {
+    background: $darkBrown;
+
     @include breakpoint-up(medium) {
         background: url('/images/IMG_8028.jpg') no-repeat center center fixed;
         -webkit-background-size: cover;
@@ -174,6 +176,7 @@ button,
     transition: opacity 300ms ease-in-out;
 
     &:hover {
+        text-decoration: none;
         opacity: 0.75;
         color: rgba(255, 255, 255, 1);
         box-shadow: 0 5px 15px rgba(255, 34, 53, 0.4);
