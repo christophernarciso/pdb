@@ -346,8 +346,11 @@ ion-icon {
   color: #F9F9F8;
   text-transform: uppercase;
   align-self: center;
-  font-size: .7rem;
   font-weight: bold;
+}
+
+#toggle-nav ion-icon {
+  font-size: 2.45rem;
 }
 
 @media (min-width: 769px) {

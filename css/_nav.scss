@@ -11,6 +11,9 @@
 }
 
 #toggle-nav {
+    ion-icon {
+        font-size: 2.45rem;
+    }
     padding: 8px 10px;
     border-radius: 3px;
     background-color: transparent;
@@ -18,7 +21,6 @@
     color: $wood;
     text-transform: uppercase;
     align-self: center;
-    font-size: .7rem;
     font-weight: bold;
 
     @media (min-width: 769px) {
