@@ -86,6 +86,37 @@
   animation: shake-animation 4.72s ease infinite;
 }
 
+@keyframes f {
+  /*
+           +-----A
+           .     .
+           B-----+
+  
+  transit 1,2,3,4 to A
+  transit 5,6,7,8 to B
+  */
+  /*
+       2   +-----+ 3
+       1,5 .     . 4,8
+       6   +-----+ 7
+  
+  1>2>3>4=cw
+  5>6>7>8=ccw
+  */
+  from {
+    clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0, 0 100%, 0 100%, 0 100%, 0 100%);
+    /*5,6,7,8*/
+  }
+  10%, to {
+    clip-path: polygon(0 50%, 0 0, 100% 0, 100% 50%, 0 50%, 0 100%, 100% 100%, 100% 50%);
+    /*5,6,7,8*/
+  }
+}
+
+.poly-swipe {
+  animation: f 10s 2s;
+}
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -770,8 +801,65 @@ ion-icon {
 }
 
 .story__imageblock img {
+  order: 1;
+  flex-grow: 2;
   height: 320px;
-  width: 320px;
+  width: 500px;
+}
+
+@media (max-width: 39.9375em) {
+  .story__imageblock img {
+    margin-top: 30px;
+  }
+}
+
+.story__imageblock p {
+  order: 2;
+}
+
+@media (max-width: 39.9375em) {
+  .story__imageblock p {
+    text-align: center;
+  }
+}
+
+@media (min-width: 40em) {
+  .story__imageblock p {
+    margin-left: 20px;
+  }
+}
+
+.story__imageblock2 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 63.9375em) {
+  .story__imageblock2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+.story__imageblock2 img {
+  transition-timing-function: ease-in;
+  order: 2;
+  flex-grow: 2;
+  height: 320px;
+  width: 500px;
+}
+
+.story__imageblock2 p {
+  margin-right: 20px;
+  order: 1;
+}
+
+@media (max-width: 39.9375em) {
+  .story__imageblock2 p {
+    text-align: center;
+  }
 }
 
 .story__testimonial h3 {
