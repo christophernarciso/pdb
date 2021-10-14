@@ -10,6 +10,10 @@
             text-align: left;
             margin-left: 1.5rem;
         }
+
+        @include breakpoint-up(large) {
+            width: 70%;
+        }
     }
 
     #success_message {
@@ -43,9 +47,20 @@
     &__map {
         width: 100%;
         margin-top: 3rem;
-        display:block;
+        display: block;
         border: 0;
         // margin: 0 auto;
+    }
+
+    input:focus { 
+        outline: none !important;
+        border-color: $red;
+        box-shadow: 0 0 10px $orange;
+    }
+    textarea:focus { 
+        outline: none !important;
+        border-color: $red;
+        box-shadow: 0 0 10px $orange;
     }
 
 

@@ -22,9 +22,9 @@ window.addEventListener('scroll', function () {
   imgs.forEach(i => {
     if (scrollpos >= 350 || isMobile) {
       if (isMobile) {
-        console.log('Mobile device detected. Ignore fancy transitions!');
+        // console.log('Mobile device detected. Ignore fancy transitions!');
       } else {
-        console.log('Acceptable device detected! Handling transitions');
+        // console.log('Acceptable device detected! Handling transitions');
       }
       i.classList.remove('fade-out');
       i.classList.add('fade-in');

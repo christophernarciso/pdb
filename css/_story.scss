@@ -42,6 +42,7 @@
         }
 
         img {
+            border-radius: 30px;
             order: 1;
             flex-grow: 2;
             height: 320px;
@@ -50,6 +51,10 @@
             @include breakpoint-down(medium) {
                 margin-top: 30px;
                 margin-bottom: 20px;
+            }
+
+            @include breakpoint-down(small) {
+                width: 400px;
             }
         }
 
@@ -78,6 +83,7 @@
         }
 
         img {
+            border-radius: 30px;
             transition-timing-function: ease-in;
             order: 2;
             flex-grow: 2;
@@ -87,6 +93,10 @@
             @include breakpoint-down(medium) {
                 order: 1;
                 margin-bottom: 20px;
+            }
+
+            @include breakpoint-down(small) {
+                width: 400px;
             }
         }
 
@@ -102,9 +112,6 @@
     }
 
     &__testimonial {
-        .container {
-            //background-color: $veryLightBrown;
-        }
 
         h3 {
             font-weight: 400;

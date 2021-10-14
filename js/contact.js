@@ -105,7 +105,13 @@ $(document).ready(function () {
             $('#success_message').slideDown({
                 opacity: "show"
             }, "slow") // Do something ...
-            $('#contact_form').data('bootstrapValidator').resetForm();
+            var form = $('#contact_form');
+            if (isMobile) {
+                form.removeClass('fade-in');
+                form.addClass('fade-out');
+                form.hide();
+            }
+            form.data('bootstrapValidator').resetForm();
 
             // Prevent form submission
             e.preventDefault();
@@ -119,10 +125,16 @@ $(document).ready(function () {
             // Use Ajax to submit form data
             $.post($form.attr('action'), $form.serialize(), function (result) {
                 if (result) {
-                    $('#contact_form').trigger('reset');
+                    form.trigger('reset');
+                    
                     wait(2000).then(() => {
                         $('#success_message').addClass('fade-out');
-                        wait(1000).then(() => {
+                        wait(2000).then(() => {
+                            if (isMobile) {
+                                form.removeClass('fade-out');
+                                form.show();
+                                form.addClass('fade-in');
+                            }
                             $('#success_message').hide();
                             $('#success_message').removeClass('fade-out');
                         });
