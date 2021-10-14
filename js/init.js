@@ -8,21 +8,29 @@ document.addEventListener('DOMContentLoaded', () =>
     if (footerDate) {
       footerDate[0].innerHTML = new Date().getFullYear();
     }
-  }));
-
-  let scrollpos = window.scrollY;
-  const imgs = document.querySelectorAll(".simg");
-
-  window.addEventListener('scroll', function() { 
-    scrollpos = window.scrollY;
-
-    imgs.forEach(i => {
-      if (scrollpos >= 350) {
-        i.classList.remove('fade-out');
-        i.classList.add('fade-in');
-      } else {
-        i.classList.remove('fade-in');
-        i.classList.add('fade-out');
-      }
-    });
   })
+);
+
+
+let scrollpos = window.scrollY;
+let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+const imgs = document.querySelectorAll(".simg");
+
+window.addEventListener('scroll', function () {
+  scrollpos = window.scrollY;
+
+  imgs.forEach(i => {
+    if (scrollpos >= 350 || isMobile) {
+      if (isMobile) {
+        console.log('Mobile device detected. Ignore fancy transitions!');
+      } else {
+        console.log('Acceptable device detected! Handling transitions');
+      }
+      i.classList.remove('fade-out');
+      i.classList.add('fade-in');
+    } else {
+      i.classList.remove('fade-in');
+      i.classList.add('fade-out');
+    }
+  });
+});

@@ -38,9 +38,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // Attach the handlers
-        ele.addEventListener("scroll", setSelected);
-        nextarrow.addEventListener("click", nextSlide);
-        prevarrow.addEventListener("click", prevSlide);
+        if (ele)
+            ele.addEventListener("scroll", setSelected);
+        if (nextarrow)
+            nextarrow.addEventListener("click", nextSlide);
+        if (prevarrow)
+            prevarrow.addEventListener("click", prevSlide);
 
         //setInterval for autoplay
         if (carousel.getAttribute('duration')) {

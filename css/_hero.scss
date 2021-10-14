@@ -1,6 +1,7 @@
 .hero {
     background-color: $wood;
     padding-bottom: 1rem;
+
     &__img {
         img {
             height: 100%;
@@ -12,7 +13,7 @@
     /* CAROUSEL CSS */
     .carousel {
         position: relative;
-        
+
     }
 
     .carousel::after {
@@ -153,40 +154,54 @@
         position: absolute;
 
         @include breakpoint-down(medium) {
+            width: 50%;
+            top: 15%;
+            left: 26%;
+        }
+
+        @include breakpoint-down(small) {
             border-radius: 0%;
             position: static;
             width: 100%;
         }
 
-        top: 30%;
+        top: 25%;
         left: 35%;
         z-index: 1;
         display: flex;
         flex-direction: column;
         flex-flow: column;
-        background-color: rgba(5, 2, 2, 0.4);        // background: transparent;
+        background-color: rgba(5, 2, 2, 0.4); // background: transparent;
         width: 30%;
-        h1, h2, h3 {
+
+        h1,
+        h2,
+        h3 {
             margin-top: 20px;
             color: $wood;
             text-align: center;
             text-shadow: 2px 2px $darkBrown;
         }
+
         em {
             font-size: $font-lg;
             color: $wood;
             text-align: center;
             // text-shadow: 2px 2px $darkBrown;
         }
+
         div {
             margin-top: 10px;
             margin-bottom: 30px;
         }
+
         div a {
             width: 35%;
+
             @include breakpoint-down(medium) {
                 width: 50%;
             }
+
             text-align: center;
             display: block;
             margin: 0 auto;

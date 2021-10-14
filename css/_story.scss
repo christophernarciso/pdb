@@ -1,6 +1,8 @@
 .story {
     background-color: $wood;
     font-size: $font-med;
+    // padding-bottom: 2rem;
+
 
     h1 {
         text-align: left;
@@ -14,7 +16,7 @@
         text-align: left;
 
         @include breakpoint-down(medium) {
-            text-align: center;
+            display: none;
         }
     }
 
@@ -45,19 +47,20 @@
             height: 320px;
             width: 500px;
 
-            @include breakpoint-down(small) {
+            @include breakpoint-down(medium) {
                 margin-top: 30px;
+                margin-bottom: 20px;
             }
         }
 
         p {
             order: 2;
 
-            @include breakpoint-down(small) {
+            @include breakpoint-down(medium) {
                 text-align: center;
             }
 
-            @include breakpoint-up(medium) {
+            @include breakpoint-up(large) {
                 margin-left: 20px;
             }
         }
@@ -80,37 +83,64 @@
             flex-grow: 2;
             height: 320px;
             width: 500px;
+
+            @include breakpoint-down(medium) {
+                order: 1;
+                margin-bottom: 20px;
+            }
         }
 
         p {
             margin-right: 20px;
             order: 1;
 
-            @include breakpoint-down(small) {
+            @include breakpoint-down(medium) {
+                order: 2;
                 text-align: center;
             }
         }
     }
 
     &__testimonial {
+        .container {
+            //background-color: $veryLightBrown;
+        }
+
         h3 {
             font-weight: 400;
             text-align: center;
         }
+
+        @include breakpoint-down(medium) {
+            padding-top: 5rem;
+            padding-bottom: 8rem;
+        }
+
+        @include breakpoint-down(small) {
+            padding-top: 5rem;
+            padding-bottom: 17rem;
+        }
     }
 
-    .testbg {
-        background-color: $white;
+    .carousel-inner {
+        @include breakpoint-down(small) {
+            max-height: 768px;
+        }
     }
+
 
     .carousel-indicators {
-        bottom: -80px;
+        bottom: -150px;
         li {
             background-color: $veryLightBrown;
         }
 
+        @include breakpoint-down(medium) {
+            bottom: -180px;
+        }
+
         @include breakpoint-down(small) {
-            bottom: -150px;
+            display: none;
         }
     }
 

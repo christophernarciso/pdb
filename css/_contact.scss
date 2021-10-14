@@ -1,0 +1,52 @@
+.contact {
+    background-color: $wood;
+    padding: 5rem 5rem;
+
+    h1,
+    p {
+        text-align: center;
+
+        @include breakpoint-up(medium) {
+            text-align: left;
+            margin-left: 1.5rem;
+        }
+    }
+
+    #success_message {
+        display: none;
+    }
+
+    &__form {
+        margin-top: 3rem;
+
+        form {
+            margin-top: 1rem;
+
+            ion-icon {
+                font-size: $font-lg;
+                vertical-align: middle;
+                padding-bottom: 3px;
+            }
+
+            .button {
+                font-size: $font-med;
+                text-align: center;
+                display: block;
+                // margin: 0 auto;
+                color: $wood;
+                background: $darkBrown;
+                border-radius: 0%;
+            }
+        }
+    }
+
+    &__map {
+        width: 100%;
+        margin-top: 3rem;
+        display:block;
+        border: 0;
+        // margin: 0 auto;
+    }
+
+
+}
