@@ -14,6 +14,7 @@
     ion-icon {
         font-size: 2.45rem;
     }
+
     padding: 8px 10px;
     border-radius: 3px;
     background-color: transparent;
@@ -55,6 +56,21 @@
     @media (max-width: 768px) {
         padding: 0 10px;
         display: block;
+    }
+
+    &__sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 11;
+
+        margin: 0 auto; 
+        left:0px; 
+        right:0px;
+
+        // @include breakpoint-up(large) {
+
+        // }
     }
 
     &__menu {

@@ -5,6 +5,7 @@
     color: $wood;
     padding: 2.5rem;
     text-align: center;
+
     .container {
         @include breakpoint-up(large) {
             display: grid;

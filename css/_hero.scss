@@ -14,6 +14,13 @@
     .carousel {
         position: relative;
 
+        @include breakpoint-down(medium) {
+            margin-top: 6rem;
+        }
+
+        @include breakpoint-down(small) {
+            margin-top: 6.5rem;
+        }
     }
 
     .carousel::after {
@@ -27,126 +34,141 @@
         pointer-events: none;
     }
 
-    .carousel ul {
-        overflow: auto;
-        display: flex;
-        height: 40vw;
-        max-height: 500px;
-        scroll-snap-type: x mandatory;
-        scroll-snap-points-y: repeat(100%);
-        scroll-behavior: smooth;
-        background: $darkBrown;
-        -ms-overflow-style: none;
-        /* IE and Edge */
-        scrollbar-width: none;
-        /* Firefox */
-    }
+    .carousel-item > img {
+        height: 650px;
 
+        @include breakpoint-down(medium) {
+            height: 350px;
+        }
 
-    .carousel ul::-webkit-scrollbar {
-        display: none;
-        /* Hide scrollbar for Chrome, Safari and Opera */
-    }
-
-    .carousel ul li {
-        min-width: 100%;
-        list-style: none;
-        background: url('/images/IMG_7887.jpg') center center / cover no-repeat;
-        scroll-snap-align: start;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-weight: bold;
-        font-size: 30px;
-        text-align: center;
-        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
-        z-index: 0;
-    }
-
-    .carousel ul li div {
-        z-index: 0;
-    }
-
-    .carousel ul li div a {
-        color: white;
-        display: inline-block;
-        background: white;
-        text-shadow: none;
-        color: black;
-        padding: 5px 15px;
-        font-size: 18px;
-        text-decoration: none;
-        border-radius: 4px;
-        margin-top: 10px;
-    }
-
-    .carousel ol {
-        position: absolute;
-        bottom: 15px;
-        display: flex;
-        justify-content: center;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 0;
-    }
-
-    .carousel ol li {
-        list-style: none;
-        padding: 0 5px;
-    }
-
-    .carousel ol li a {
-        display: block;
-        height: 10px;
-        width: 10px;
-        border: 2px solid white;
-        background: transparent;
-        border-radius: 100%;
-    }
-
-    .carousel ol li.selected a {
-        background: white;
-    }
-
-    .carousel .prev,
-    .carousel .next {
-        user-select: none;
-        cursor: pointer;
-        font-size: 50px;
-        color: $wood;
-        position: absolute;
-        left: 0;
-        padding: 15px;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 0;
-    }
-
-    .carousel .next {
-        left: auto;
-        right: 0;
-    }
-
-    /* RESPONSIVE CSS */
-    @media only screen and (max-width: 600px) {
-        .carousel ul li div {
-            display: none;
+        @include breakpoint-down(small) {
+            height: 250px;
         }
     }
 
-    /* DEMO CSS */
-    .carousel ul li:nth-child(2) {
-        background-image: url('/images/IMG_7872.jpg');
+    .carousel-control-next-icon, .carousel-control-prev-icon {
     }
 
-    .carousel ul li:nth-child(3) {
-        background-image: url('/images/IMG_7929.jpg');
-    }
+    // .carousel ul {
+    //     overflow: auto;
+    //     display: flex;
+    //     height: 40vw;
+    //     max-height: 500px;
+    //     scroll-snap-type: x mandatory;
+    //     scroll-snap-points-y: repeat(100%);
+    //     scroll-behavior: smooth;
+    //     background: $darkBrown;
+    //     -ms-overflow-style: none;
+    //     /* IE and Edge */
+    //     scrollbar-width: none;
+    //     /* Firefox */
+    // }
 
-    .carousel ul li:nth-child(4) {
-        background-image: url('/images/IMG_7968.jpg');
-    }
+
+    // .carousel ul::-webkit-scrollbar {
+    //     display: none;
+    //     /* Hide scrollbar for Chrome, Safari and Opera */
+    // }
+
+    // .carousel ul li {
+    //     min-width: 100%;
+    //     list-style: none;
+    //     background: url('/images/IMG_7887.jpg') center center / cover no-repeat;
+    //     scroll-snap-align: start;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     color: white;
+    //     font-weight: bold;
+    //     font-size: 30px;
+    //     text-align: center;
+    //     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+    //     z-index: 0;
+    // }
+
+    // .carousel ul li div {
+    //     z-index: 0;
+    // }
+
+    // .carousel ul li div a {
+    //     color: white;
+    //     display: inline-block;
+    //     background: white;
+    //     text-shadow: none;
+    //     color: black;
+    //     padding: 5px 15px;
+    //     font-size: 18px;
+    //     text-decoration: none;
+    //     border-radius: 4px;
+    //     margin-top: 10px;
+    // }
+
+    // .carousel ol {
+    //     position: absolute;
+    //     bottom: 15px;
+    //     display: flex;
+    //     justify-content: center;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    //     z-index: 0;
+    // }
+
+    // .carousel ol li {
+    //     list-style: none;
+    //     padding: 0 5px;
+    // }
+
+    // .carousel ol li a {
+    //     display: block;
+    //     height: 10px;
+    //     width: 10px;
+    //     border: 2px solid white;
+    //     background: transparent;
+    //     border-radius: 100%;
+    // }
+
+    // .carousel ol li.selected a {
+    //     background: white;
+    // }
+
+    // .carousel .prev,
+    // .carousel .next {
+    //     user-select: none;
+    //     cursor: pointer;
+    //     font-size: 50px;
+    //     color: $wood;
+    //     position: absolute;
+    //     left: 0;
+    //     padding: 15px;
+    //     top: 50%;
+    //     transform: translateY(-50%);
+    //     z-index: 0;
+    // }
+
+    // .carousel .next {
+    //     left: auto;
+    //     right: 0;
+    // }
+
+    // /* RESPONSIVE CSS */
+    // @media only screen and (max-width: 600px) {
+    //     .carousel ul li div {
+    //         display: none;
+    //     }
+    // }
+
+    // /* DEMO CSS */
+    // .carousel ul li:nth-child(2) {
+    //     background-image: url('/images/IMG_7872.jpg');
+    // }
+
+    // .carousel ul li:nth-child(3) {
+    //     background-image: url('/images/IMG_7929.jpg');
+    // }
+
+    // .carousel ul li:nth-child(4) {
+    //     background-image: url('/images/IMG_7968.jpg');
+    // }
 
     .slide_info {
         border: solid 1px $darkBrown;
@@ -155,18 +177,22 @@
 
         @include breakpoint-down(medium) {
             width: 50%;
-            top: 15%;
-            left: 26%;
+            top: 20%;
         }
 
         @include breakpoint-down(small) {
             border-radius: 0%;
-            position: static;
+            border: none;
+            background: none;
+            position: absolute;
             width: 100%;
+            top: 15%;
         }
 
+        margin: 0 auto;
+        left: 0;
+        right: 0;
         top: 25%;
-        left: 35%;
         z-index: 1;
         display: flex;
         flex-direction: column;
@@ -181,13 +207,20 @@
             color: $wood;
             text-align: center;
             text-shadow: 2px 2px $darkBrown;
+
+            @include breakpoint-down(small) {
+                text-shadow: 2px 1px black;
+            }
         }
 
         em {
             font-size: $font-lg;
             color: $wood;
             text-align: center;
-            // text-shadow: 2px 2px $darkBrown;
+            
+            @include breakpoint-down(small) {
+                text-shadow: 2px 1px black;
+            }
         }
 
         div {

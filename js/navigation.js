@@ -1,12 +1,12 @@
 'use strict'
 
 // Helper function
-function addListenerToElement (element, eventType, listener) {
+function addListenerToElement(element, eventType, listener) {
   element.addEventListener(eventType, listener)
 }
 
 // Add "active" class to clicked element, remove it from siblings and toggle show in sub-menus
-function toggleActiveClass () {
+function toggleActiveClass() {
   let parentElement = this.parentNode
   let siblings = parentElement.parentNode.children
   let dropDown = this.nextElementSibling
@@ -25,7 +25,7 @@ function toggleActiveClass () {
 }
 
 // Close the open dropdow clicking everywhere
-function closeDropdown (event) {
+function closeDropdown(event) {
   let dropDownShow = document.getElementsByClassName(
     'main-nav__sub-menu--show'
   )[0]
@@ -39,7 +39,7 @@ function closeDropdown (event) {
 }
 
 // Toggle animated menu opening in mobile view, dynamically based on menu items quantity
-function toggleNav () {
+function toggleNav() {
   const navBar = this.parentNode.nextElementSibling
   const menuItem = document.getElementsByClassName('main-nav__menu-item')
   const menuItemHeight = menuItem[0].offsetHeight
@@ -49,12 +49,20 @@ function toggleNav () {
   navBar.classList.toggle('main-nav__menu--open')
 
   if (navBar.classList.contains('main-nav__menu--open')) {
-    navBar.animate([{ height: '0' }, { height: menuHeight + 'px' }], {
+    navBar.animate([{
+      height: '0'
+    }, {
+      height: menuHeight + 'px'
+    }], {
       duration: 500,
       easing: 'ease-in-out'
     });
   } else {
-    navBar.animate([{ height: menuHeight + 'px' }, { height: '0' }], {
+    navBar.animate([{
+      height: menuHeight + 'px'
+    }, {
+      height: '0'
+    }], {
       duration: 500,
       easing: 'ease-in-out'
     });
