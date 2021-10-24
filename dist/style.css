@@ -1205,6 +1205,110 @@ ion-icon {
           box-shadow: 0 0 10px #EF5226;
 }
 
+.about {
+  background-color: #F9F9F8;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.about h1,
+.about p {
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .about h1,
+  .about p {
+    text-align: left;
+    margin-left: 1.5rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .about h1,
+  .about p {
+    width: 70%;
+  }
+}
+
+.menu {
+  background-color: #F9F9F8;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.menu h1,
+.menu p {
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .menu h1,
+  .menu p {
+    text-align: left;
+    margin-left: 1.5rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .menu h1,
+  .menu p {
+    width: 70%;
+  }
+}
+
+.preorder {
+  background-color: #F9F9F8;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.preorder h1,
+.preorder p {
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .preorder h1,
+  .preorder p {
+    text-align: left;
+    margin-left: 1.5rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .preorder h1,
+  .preorder p {
+    width: 70%;
+  }
+}
+
+.catering {
+  background-color: #F9F9F8;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.catering h1,
+.catering p {
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .catering h1,
+  .catering p {
+    text-align: left;
+    margin-left: 1.5rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .catering h1,
+  .catering p {
+    width: 70%;
+  }
+}
+
 .footer {
   background-color: #8F1717;
   color: #F9F9F8;
