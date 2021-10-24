@@ -2,9 +2,10 @@
     background-color: $wood;
     // padding: 5rem 5rem;
     padding-top: 10rem;
-    padding-bottom: 5rem;
+    padding-bottom: 20rem;
+    font-size: $font-med;
 
-    h1,
+    h1, h2, h3,
     p {
         text-align: center;
 
@@ -15,6 +16,54 @@
 
         @include breakpoint-up(large) {
             width: 70%;
+        }
+    }
+
+    .cards {
+        padding-top: 2.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .card-header {
+        font-size: $font-lg;
+        font-weight: 600;
+        color: $orange;
+    }
+
+    .card-text {
+        font-size: $font-med;
+        font-weight: 300;
+        color: $darkBrown;
+    }
+    
+    .button {
+        font-size: $font-med;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        color: $wood;
+        background: $darkBrown;
+        border-radius: 0%;
+    }
+
+    .button_group {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .msg_button, .call_button {
+        width: 200px;
+    }
+
+    .call_button {
+        @include breakpoint-down(small) {
+            padding-bottom: 2.5rem;
         }
     }
 }

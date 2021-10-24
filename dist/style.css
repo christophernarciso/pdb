@@ -1085,7 +1085,6 @@ ion-icon {
 .activity {
   background-color: #F9F9F8;
   font-size: 1.125rem;
-  padding-bottom: 5rem;
 }
 
 .activity h1 {
@@ -1111,24 +1110,9 @@ ion-icon {
   }
 }
 
-.activity__social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-@media (max-width: 39.9375em) {
-  .activity__social {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
+.activity__feed {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
 }
 
 .contact {
@@ -1209,6 +1193,7 @@ ion-icon {
   background-color: #F9F9F8;
   padding-top: 10rem;
   padding-bottom: 5rem;
+  font-size: 1.125rem;
 }
 
 .about h1,
@@ -1286,16 +1271,17 @@ ion-icon {
 .catering {
   background-color: #F9F9F8;
   padding-top: 10rem;
-  padding-bottom: 5rem;
+  padding-bottom: 20rem;
+  font-size: 1.125rem;
 }
 
-.catering h1,
+.catering h1, .catering h2, .catering h3,
 .catering p {
   text-align: center;
 }
 
 @media (min-width: 40em) {
-  .catering h1,
+  .catering h1, .catering h2, .catering h3,
   .catering p {
     text-align: left;
     margin-left: 1.5rem;
@@ -1303,9 +1289,72 @@ ion-icon {
 }
 
 @media (min-width: 64em) {
-  .catering h1,
+  .catering h1, .catering h2, .catering h3,
   .catering p {
     width: 70%;
+  }
+}
+
+.catering .cards {
+  padding-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catering .card-header {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #EF5226;
+}
+
+.catering .card-text {
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: #50413A;
+}
+
+.catering .button {
+  font-size: 1.125rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  color: #F9F9F8;
+  background: #50413A;
+  border-radius: 0%;
+}
+
+.catering .button_group {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.catering .msg_button, .catering .call_button {
+  width: 200px;
+}
+
+@media (max-width: 39.9375em) {
+  .catering .call_button {
+    padding-bottom: 2.5rem;
   }
 }
 

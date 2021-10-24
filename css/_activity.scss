@@ -1,7 +1,6 @@
 .activity {
     background-color: $wood;
     font-size: $font-med;
-    padding-bottom: 5rem;
 
     h1 {
         text-align: left;
@@ -22,13 +21,8 @@
         }
     }
 
-    &__social {
-        display: flex;
-        justify-content: center;
-
-        @include breakpoint-down(small) {
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
+    &__feed {
+        padding-top: 5rem;
+        padding-bottom: 10rem;
     }
 }
