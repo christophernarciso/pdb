@@ -864,12 +864,12 @@ ion-icon {
   font-size: 1.125rem;
 }
 
-.story h1 {
+.story h1, .story h2, .story h3 {
   text-align: left;
 }
 
 @media (max-width: 63.9375em) {
-  .story h1 {
+  .story h1, .story h2, .story h3 {
     text-align: center;
   }
 }
@@ -885,7 +885,7 @@ ion-icon {
 }
 
 .story__intro {
-  font-weight: 300;
+  font-weight: 350;
   text-align: left;
   width: 75%;
 }
@@ -897,13 +897,74 @@ ion-icon {
   }
 }
 
+.story__schedule {
+  margin-bottom: 2rem;
+}
+
+.story__schedule ion-icon {
+  font-size: 3.25rem;
+}
+
+.story__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.story__socials ion-icon {
+  color: #50413A;
+  font-size: 2.5rem;
+}
+
+@media (min-width: 64em) {
+  .story__socials a:not(:last-child) {
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .story__socials {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 1rem;
+  }
+  .story__socials a:not(:last-child) {
+    padding-right: 1rem;
+  }
+}
+
+.story__socials a, .story__socials a:hover {
+  outline: none;
+  text-decoration: none;
+}
+
+.story__socials .social_text {
+  padding-left: 1rem;
+  color: #50413A;
+}
+
+@media (max-width: 63.9375em) {
+  .story__socials .social_text {
+    display: none;
+  }
+}
+
 .story__imageblock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media (max-width: 63.9375em) {
@@ -914,38 +975,34 @@ ion-icon {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
-.story__imageblock img {
-  border-radius: 30px;
+.story__imageblock .social_schedule {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-  height: 320px;
-  width: 500px;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
 }
 
 @media (max-width: 63.9375em) {
-  .story__imageblock img {
-    margin-top: 30px;
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 39.9375em) {
-  .story__imageblock img {
-    width: 400px;
+  .story__imageblock .social_schedule {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 .story__imageblock p {
+  font-weight: 350;
+  -webkit-box-flex: 6;
+      -ms-flex-positive: 6;
+          flex-grow: 6;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
@@ -954,6 +1011,10 @@ ion-icon {
 @media (max-width: 63.9375em) {
   .story__imageblock p {
     text-align: center;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-bottom: 3rem;
   }
 }
 
@@ -988,7 +1049,7 @@ ion-icon {
 }
 
 .story__imageblock2 img {
-  border-radius: 30px;
+  border-radius: 8px;
   -webkit-transition-timing-function: ease-in;
           transition-timing-function: ease-in;
   -webkit-box-ordinal-group: 3;
@@ -1017,6 +1078,7 @@ ion-icon {
 }
 
 .story__imageblock2 p {
+  font-weight: 350;
   margin-right: 20px;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -1030,6 +1092,10 @@ ion-icon {
             order: 2;
     text-align: center;
   }
+}
+
+.story__testimonial {
+  padding-bottom: 5rem;
 }
 
 .story__testimonial h3 {
@@ -1085,6 +1151,8 @@ ion-icon {
 .activity {
   background-color: #F9F9F8;
   font-size: 1.125rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .activity h1 {
@@ -1108,11 +1176,6 @@ ion-icon {
     text-align: center;
     width: 100%;
   }
-}
-
-.activity__feed {
-  padding-top: 5rem;
-  padding-bottom: 10rem;
 }
 
 .contact {
@@ -1319,7 +1382,7 @@ ion-icon {
 
 .catering .card-text {
   font-size: 1.125rem;
-  font-weight: 300;
+  font-weight: 350;
   color: #50413A;
 }
 

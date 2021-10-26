@@ -1,6 +1,8 @@
 .activity {
     background-color: $wood;
     font-size: $font-med;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
     h1 {
         text-align: left;
@@ -19,10 +21,5 @@
             text-align: center;
             width: 100%;
         }
-    }
-
-    &__feed {
-        padding-top: 5rem;
-        padding-bottom: 10rem;
     }
 }

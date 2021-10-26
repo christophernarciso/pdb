@@ -4,7 +4,7 @@
     // padding-bottom: 2rem;
 
 
-    h1 {
+    h1, h2, h3 {
         text-align: left;
 
         @include breakpoint-down(medium) {
@@ -21,7 +21,7 @@
     }
 
     &__intro {
-        font-weight: 300;
+        font-weight: 350;
         text-align: left;
         width: 75%;
 
@@ -31,38 +31,100 @@
         }
     }
 
+    &__schedule {
+        margin-bottom: 2rem;
+        ion-icon {
+            font-size: $font-xl;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        ion-icon {
+            color: $darkBrown;
+            font-size: 2.5rem;
+        }
+
+        @include breakpoint-up(large) {
+            a:not(:last-child) {
+                padding-bottom: 1rem;
+            }
+        }
+
+        @include breakpoint-down(medium) {
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 1rem;
+            a:not(:last-child) {
+                padding-right: 1rem;
+            }
+        }
+
+        a, a:hover {
+            outline: none;
+            text-decoration: none;
+        }
+
+        .social_text {
+            padding-left: 1rem;
+            color: $darkBrown;
+
+            @include breakpoint-down(medium) {
+                display: none;
+            }
+        }
+    }
+
     &__imageblock {
         display: flex;
-        justify-content: center;
+        // justify-content: center;
 
         @include breakpoint-down(medium) {
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-evenly;
+            justify-content: center;
         }
 
-        img {
-            border-radius: 30px;
+
+        .social_schedule {
             order: 1;
-            flex-grow: 2;
-            height: 320px;
-            width: 500px;
-
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
             @include breakpoint-down(medium) {
-                margin-top: 30px;
-                margin-bottom: 20px;
-            }
-
-            @include breakpoint-down(small) {
-                width: 400px;
+                justify-content: center;
             }
         }
+
+        // img {
+        //     border-radius: 30px;
+        //     order: 1;
+        //     flex-grow: 2;
+        //     height: 320px;
+        //     width: 500px;
+
+        //     @include breakpoint-down(medium) {
+        //         margin-top: 30px;
+        //         margin-bottom: 20px;
+        //     }
+
+        //     @include breakpoint-down(small) {
+        //         width: 400px;
+        //     }
+        // }
 
         p {
+            font-weight: 350;
+            flex-grow: 6;
             order: 2;
 
             @include breakpoint-down(medium) {
                 text-align: center;
+                flex-grow: 1;
+                margin-bottom: 3rem;
             }
 
             @include breakpoint-up(large) {
@@ -83,7 +145,7 @@
         }
 
         img {
-            border-radius: 30px;
+            border-radius: 8px;
             transition-timing-function: ease-in;
             order: 2;
             flex-grow: 2;
@@ -101,6 +163,7 @@
         }
 
         p {
+            font-weight: 350;
             margin-right: 20px;
             order: 1;
 
@@ -112,6 +175,7 @@
     }
 
     &__testimonial {
+        padding-bottom: 5rem;
 
         h3 {
             font-weight: 400;
