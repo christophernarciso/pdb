@@ -1,12 +1,13 @@
 .about {
     background-color: $wood;
     // padding: 5rem 5rem;
-    padding-top: 10rem;
+    padding-top: 8rem;
     padding-bottom: 5rem;
     font-size: $font-med;
 
     h1,
     p {
+        padding-top: 2rem;
         text-align: center;
 
         @include breakpoint-up(medium) {
@@ -16,6 +17,22 @@
 
         @include breakpoint-up(large) {
             width: 70%;
+        }
+    }
+
+    &__img {
+        padding-top: 2rem;
+        img {
+            max-height: 100%;
+            max-width: 75%;
+             /* remove extra space below image */
+            display: block;
+            margin-left: .5rem;
+
+            @include breakpoint-down(medium) {
+                max-width: 100%;
+                margin-left: 0;
+            }
         }
     }
 }
