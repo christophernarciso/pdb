@@ -98,7 +98,8 @@
 }
 
 .shake {
-  animation: shake-animation 4.72s ease infinite;
+  // animation: shake-animation 4.72s ease infinite;
+  animation: shake-animation 10s ease infinite;
 }
 
 @keyframes f {

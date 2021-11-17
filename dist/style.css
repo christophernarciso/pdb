@@ -172,8 +172,8 @@
 }
 
 .shake {
-  -webkit-animation: shake-animation 4.72s ease infinite;
-          animation: shake-animation 4.72s ease infinite;
+  -webkit-animation: shake-animation 10s ease infinite;
+          animation: shake-animation 10s ease infinite;
 }
 
 @-webkit-keyframes f {
@@ -864,12 +864,16 @@ ion-icon {
   font-size: 1.125rem;
 }
 
-.story h1, .story h2, .story h3 {
+.story h1,
+.story h2,
+.story h3 {
   text-align: left;
 }
 
 @media (max-width: 63.9375em) {
-  .story h1, .story h2, .story h3 {
+  .story h1,
+  .story h2,
+  .story h3 {
     text-align: center;
   }
 }
@@ -945,7 +949,8 @@ ion-icon {
   }
 }
 
-.story__socials a, .story__socials a:hover {
+.story__socials a,
+.story__socials a:hover {
   outline: none;
   text-decoration: none;
 }
@@ -988,6 +993,7 @@ ion-icon {
   width: 100%;
   height: 100%;
   border-radius: 8px;
+  padding-bottom: 1rem;
 }
 
 @media (max-width: 63.9375em) {
@@ -996,6 +1002,15 @@ ion-icon {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.story__imageblock .social_schedule iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  border: 0;
+  border-radius: 8px;
+  background-color: #7F5334;
 }
 
 .story__imageblock p {
