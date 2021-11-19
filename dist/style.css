@@ -927,6 +927,10 @@ ion-icon {
   font-size: 2.5rem;
 }
 
+.story__socials ion-icon:hover {
+  color: #BC9060;
+}
+
 @media (min-width: 64em) {
   .story__socials a:not(:last-child) {
     padding-bottom: 1rem;
@@ -1390,7 +1394,7 @@ ion-icon {
 }
 
 .menu .single_menu img {
-  width: 33%;
+  width: 30%;
   position: absolute;
   height: 140px;
   -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
@@ -1402,7 +1406,7 @@ ion-icon {
 }
 
 .menu .menu_content {
-  padding-left: 200px;
+  padding-left: 175px;
 }
 
 @media (max-width: 63.9375em) {

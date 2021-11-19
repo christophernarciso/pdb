@@ -64,7 +64,7 @@
     }
 
     .single_menu img {
-        width: 33%;
+        width: 30%;
         position: absolute;
         height: 140px;
         -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
@@ -75,7 +75,7 @@
     }
 
     .menu_content {
-        padding-left: 200px;
+        padding-left: 175px;
         @include breakpoint-down(medium) {
             padding-left: 120px;
         }
