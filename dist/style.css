@@ -1184,6 +1184,10 @@ ion-icon {
   }
 }
 
+.activity p {
+  font-weight: 350;
+}
+
 .activity__intro {
   font-weight: 300;
   text-align: left;
