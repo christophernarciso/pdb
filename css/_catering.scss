@@ -1,8 +1,7 @@
 .catering {
     background-color: $wood;
-    // padding: 5rem 5rem;
-    padding-top: 10rem;
-    padding-bottom: 20rem;
+    // padding-top: 10rem;
+    padding-bottom: 10rem;
     font-size: $font-med;
 
     h1, h2, h3,
@@ -54,11 +53,12 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     .msg_button, .call_button {
         width: 200px;
+        padding-right: 20px;
     }
 
     .call_button {

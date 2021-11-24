@@ -1,8 +1,21 @@
+.header {
+    background-color: $red;
+    box-shadow: 0 2px 2px $darkBrown;
+}
+
 .brand {
     vertical-align: middle;
-    font-size: 1.65rem;
-    // color: $darkBrown;
+    // font-size: 1.65rem;
+    font-size: $font-xl;  
+    letter-spacing: 0.325rem;
+    // color: $veryLightBrown;
     color: $wood;
+    font-family: 'Dancing Script', sans-serif;
+    overflow: wrap;
+
+    @include breakpoint-down(medium) {
+        font-size: 1.65rem;
+    }
 
     @include breakpoint-down(small) {
         overflow: wrap;
@@ -46,7 +59,7 @@
     // background-color: $wood;
     background-color: $red;
     // box-shadow: 0 2px 10px -5px rgba(0, 0, 0, .35);
-    box-shadow: 0 5px 5px $darkBrown;
+    // box-shadow: 0 5px 5px $darkBrown;
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -60,7 +73,7 @@
     }
 
     &__sticky {
-        position: fixed;
+        position: sticky;
         top: 0;
         width: 100%;
         z-index: 11;
@@ -68,10 +81,6 @@
         margin: 0 auto; 
         left:0px; 
         right:0px;
-
-        // @include breakpoint-up(large) {
-
-        // }
     }
 
     &__menu {

@@ -27,6 +27,8 @@
     .nav-item {
         display: inline-block;
         text-align: center;
+        border: 1px solid $darkBrown;
+        border-radius: 8px;
     }
 
     .nav-tabs .nav-link {
@@ -38,17 +40,19 @@
         color: #fff;
         font-weight: 700;
         border: 1px solid $darkBrown;
+        border-radius: 5px;
         text-transform: capitalize;
     }
 
     .nav-link {
-        color: #000;
+        color: $darkBrown;
     }
 
     .nav-tabs .nav-link:hover {
         background: $red;
         color: #fff;
         border: 1px solid $darkBrown;
+        border-radius: 5px;
     }
 
     .single_menu {
@@ -60,24 +64,32 @@
     .single_menu:hover img {
         -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
         clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
-
     }
 
     .single_menu img {
-        width: 30%;
+        width: 25%;
         position: absolute;
-        height: 140px;
+        height: 150px;
         -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
         clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
         transition: .3s;
         border: 1px solid #ddd;
         border-radius: 5px;
+
+        @include breakpoint-down(medium) {
+            width: 40%;
+            height: 160px;
+        }
     }
 
     .menu_content {
-        padding-left: 175px;
+        padding-left: 250px;
         @include breakpoint-down(medium) {
-            padding-left: 120px;
+            padding-left: 140px;
+        }
+
+        @include breakpoint-down(small) {
+            padding-left: 175px;
         }
     }
 

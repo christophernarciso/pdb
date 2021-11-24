@@ -14,13 +14,13 @@
     .carousel {
         position: relative;
 
-        @include breakpoint-down(medium) {
-            margin-top: 6rem;
-        }
+        // @include breakpoint-down(medium) {
+        //     margin-top: 1rem;
+        // }
 
-        @include breakpoint-down(small) {
-            margin-top: 6.5rem;
-        }
+        // @include breakpoint-down(small) {
+        //     margin-top: 6.5rem;
+        // }
     }
 
     .carousel::after {
@@ -35,7 +35,7 @@
     }
 
     .carousel-item > img {
-        height: 650px;
+        height: 850px;
 
         @include breakpoint-down(medium) {
             height: 350px;
@@ -168,8 +168,8 @@
     // }
 
     .slide_info {
-        border: solid 1px $darkBrown;
-        border-radius: 8px;
+        // border: solid 1px $darkBrown;
+        // border-radius: 8px;
         position: absolute;
 
         @include breakpoint-down(medium) {
@@ -194,28 +194,27 @@
         display: flex;
         flex-direction: column;
         flex-flow: column;
-        background-color: rgba(5, 2, 2, 0.4); // background: transparent;
-        width: 30%;
+        // background-color: rgba(5, 2, 2, 0.4); // background: transparent;
+        width: 100%;
 
         h1,
         h2,
         h3 {
-            margin-top: 20px;
+            font-size: 3.5rem;
+            margin-top: 220px;
             color: $wood;
             text-align: center;
             text-shadow: 2px 2px $darkBrown;
+            font-family: 'Red Hat Display', sans-serif;
 
-            @include breakpoint-down(small) {
-                text-shadow: 2px 1px black;
+
+            @include breakpoint-down(medium) {
+                font-size: 3rem;
+                margin-top: 20px;
             }
-        }
 
-        em {
-            font-size: $font-lg;
-            color: $wood;
-            text-align: center;
-            
             @include breakpoint-down(small) {
+                margin-top: 20px;
                 text-shadow: 2px 1px black;
             }
         }
@@ -226,7 +225,7 @@
         }
 
         div a {
-            width: 35%;
+            width: 15%;
 
             @include breakpoint-down(medium) {
                 width: 50%;
@@ -238,6 +237,10 @@
             color: $wood;
             background: $darkBrown;
             border-radius: 0%;
+            font-size: $font-med;
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 0.25rem;
+            border: 2px solid $wood;
         }
     }
 

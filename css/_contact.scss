@@ -1,7 +1,7 @@
 .contact {
     background-color: $wood;
     // padding: 5rem 5rem;
-    padding-top: 10rem;
+    // padding-top: 10rem;
     padding-bottom: 5rem;
 
     h1,
@@ -27,6 +27,11 @@
 
         form {
             margin-top: 1rem;
+            // display: inline-block;
+            // margin-left: auto;
+            // margin-right: auto;
+            // text-align: left;
+
 
             ion-icon {
                 font-size: $font-lg;

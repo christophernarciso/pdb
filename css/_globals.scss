@@ -10,20 +10,18 @@ html {
 }
 
 body {
-    background: $darkBrown;
 
-    @include breakpoint-up(medium) {
-        background: url('/images/IMG_8028.jpg') no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
+    // @include breakpoint-up(medium) {
+    //     background: url('/images/IMG_8028.jpg') no-repeat center center fixed;
+    //     -webkit-background-size: cover;
+    //     -moz-background-size: cover;
+    //     -o-background-size: cover;
+    //     background-size: cover;
+    // }
 
     margin: 0;
     padding: 0;
-    font-family: 'Public Sans',
-    sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-size: $font-med;
     font-weight: 300;
     color: $darkBrown;
@@ -76,10 +74,11 @@ a:active {
 }
 
 // Spacing
-.container {
+.container-custom {
     // max-width: 69.375rem;
     // max-width: 75.375rem;
-    max-width: 99.375rem;
+    // max-width: 85.375rem;
+    max-width: 100.375rem;
     margin: 0 auto;
     border: 0;
 
@@ -173,6 +172,7 @@ button,
     color: $white;
     font-weight: 400;
     font-size: $font-sm;
+    font-family: 'Red Hat Display', sans-serif;
     transition: opacity 300ms ease-in-out;
 
     &:hover {

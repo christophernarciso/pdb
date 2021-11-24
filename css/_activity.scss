@@ -19,7 +19,7 @@
     &__intro {
         font-weight: 300;
         text-align: left;
-        width: 75%;
+        width: 65%;
 
         @include breakpoint-down(medium) {
             text-align: center;
