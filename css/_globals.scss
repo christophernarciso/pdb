@@ -21,7 +21,7 @@ body {
 
     margin: 0;
     padding: 0;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: $font-med;
     font-weight: 300;
     color: $darkBrown;
@@ -172,14 +172,15 @@ button,
     color: $white;
     font-weight: 400;
     font-size: $font-sm;
-    font-family: 'Red Hat Display', sans-serif;
-    transition: opacity 300ms ease-in-out;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
         text-decoration: none;
-        opacity: 0.75;
-        color: rgba(255, 255, 255, 1);
-        box-shadow: 0 5px 15px rgba(255, 34, 53, 0.4);
+        // opacity: 0.85;
+        transform: scale(1.2);
+        // color: rgba(255, 255, 255, 1);
+        // box-shadow: 0 5px 15px rgba(255, 34, 53, 0.4);
     }
 }
 

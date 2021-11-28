@@ -1,8 +1,8 @@
 .contact {
     background-color: $wood;
-    // padding: 5rem 5rem;
-    // padding-top: 10rem;
+    padding-top: 4rem;
     padding-bottom: 5rem;
+    overflow-x: hidden;
 
     h1,
     p {
@@ -10,11 +10,7 @@
 
         @include breakpoint-up(medium) {
             text-align: left;
-            margin-left: 1.5rem;
-        }
-
-        @include breakpoint-up(large) {
-            width: 70%;
+            padding-left: 1rem;
         }
     }
 
@@ -23,15 +19,10 @@
     }
 
     &__form {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 3rem;
+        margin-top: 5rem;
 
         form {
-            margin-top: 1rem;
-            // text-align: left;
-
-
+            text-align: left;
             ion-icon {
                 font-size: $font-lg;
                 vertical-align: middle;
@@ -47,7 +38,6 @@
                 background: $darkBrown;
                 border-radius: 0%;
             }
-
         }
     }
 
@@ -57,11 +47,6 @@
         display: block;
         border: 0;
         // margin: 0 auto;
-    }
-
-    &__wrap {
-        margin-left: auto;
-        margin-right: auto;
     }
 
     input:focus {

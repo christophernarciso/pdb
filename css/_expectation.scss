@@ -1,4 +1,4 @@
-.activity {
+.expectation {
     background-color: $wood;
     font-size: $font-med;
     padding-top: 2rem;
@@ -9,6 +9,10 @@
 
         @include breakpoint-down(medium) {
             text-align: center;
+        }
+
+        @include breakpoint-up(large) {
+            padding-top: 3rem;
         }
     }
 
@@ -25,5 +29,6 @@
             text-align: center;
             width: 100%;
         }
+
     }
 }

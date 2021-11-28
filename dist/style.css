@@ -339,7 +339,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 1.125rem;
   font-weight: 300;
   color: #50413A;
@@ -508,18 +508,16 @@ button,
   color: #F6F8F9;
   font-weight: 400;
   font-size: 0.875rem;
-  font-family: 'Red Hat Display', sans-serif;
-  -webkit-transition: opacity 300ms ease-in-out;
-  transition: opacity 300ms ease-in-out;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 button:hover,
 .button:hover {
   text-decoration: none;
-  opacity: 0.75;
-  color: white;
-  -webkit-box-shadow: 0 5px 15px rgba(255, 34, 53, 0.4);
-          box-shadow: 0 5px 15px rgba(255, 34, 53, 0.4);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .divider {
@@ -822,6 +820,10 @@ ion-icon {
      object-fit: contain;
 }
 
+.hero__slogan {
+  font-size: 1.25rem;
+}
+
 .hero .carousel {
   position: relative;
 }
@@ -906,7 +908,7 @@ ion-icon {
   .hero .slide_info h1,
   .hero .slide_info h2,
   .hero .slide_info h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 20px;
   }
 }
@@ -934,8 +936,8 @@ ion-icon {
   background: #50413A;
   border-radius: 0%;
   font-size: 1.125rem;
-  font-family: 'Bebas Neue', sans-serif;
-  letter-spacing: 0.25rem;
+  font-family: 'Bebas Neue', 'Helvetica', 'Arial', sans-serif;
+  letter-spacing: 0.125rem;
   border: 2px solid #F9F9F8;
 }
 
@@ -1263,35 +1265,41 @@ ion-icon {
   font-size: 3.25rem;
 }
 
-.activity {
+.expectation {
   background-color: #F9F9F8;
   font-size: 1.125rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-.activity h1 {
+.expectation h1 {
   text-align: left;
 }
 
 @media (max-width: 63.9375em) {
-  .activity h1 {
+  .expectation h1 {
     text-align: center;
   }
 }
 
-.activity p {
+@media (min-width: 64em) {
+  .expectation h1 {
+    padding-top: 3rem;
+  }
+}
+
+.expectation p {
   font-weight: 350;
 }
 
-.activity__intro {
+.expectation__intro {
   font-weight: 300;
   text-align: left;
   width: 65%;
 }
 
 @media (max-width: 63.9375em) {
-  .activity__intro {
+  .expectation__intro {
     text-align: center;
     width: 100%;
   }
@@ -1299,7 +1307,9 @@ ion-icon {
 
 .contact {
   background-color: #F9F9F8;
+  padding-top: 4rem;
   padding-bottom: 5rem;
+  overflow-x: hidden;
 }
 
 .contact h1,
@@ -1311,14 +1321,7 @@ ion-icon {
   .contact h1,
   .contact p {
     text-align: left;
-    margin-left: 1.5rem;
-  }
-}
-
-@media (min-width: 64em) {
-  .contact h1,
-  .contact p {
-    width: 70%;
+    padding-left: 1rem;
   }
 }
 
@@ -1327,13 +1330,11 @@ ion-icon {
 }
 
 .contact__form {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .contact__form form {
-  margin-top: 1rem;
+  text-align: left;
 }
 
 .contact__form form ion-icon {
@@ -1356,11 +1357,6 @@ ion-icon {
   margin-top: 3rem;
   display: block;
   border: 0;
-}
-
-.contact__wrap {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .contact input:focus {
@@ -1590,19 +1586,14 @@ ion-icon {
   letter-spacing: 0.125rem;
   font-weight: 500;
   font-size: 1.125rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.menu .btn.btn-danger::before {
-  position: absolute;
-  content: '';
-  background: #50413A;
-  width: 100%;
-  height: 100%;
-  left: -100%;
-  top: 100%;
-  -webkit-transition: .3s;
-  transition: .3s;
-  z-index: -1;
+.menu .btn.btn-danger:hover {
+  text-decoration: none;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .menu .btn.btn-danger:hover:before {
@@ -1641,6 +1632,7 @@ ion-icon {
   padding-top: 4rem;
   padding-bottom: 10rem;
   font-size: 1.25rem;
+  overflow-x: hidden;
 }
 
 @media (max-width: 63.9375em) {
@@ -1720,7 +1712,7 @@ ion-icon {
 
 .catering .msg_button,
 .catering .call_button {
-  width: 200px;
+  width: 210px;
   padding-right: 20px;
 }
 

@@ -85,6 +85,7 @@
 
     .menu_content {
         padding-left: 250px;
+
         @include breakpoint-down(medium) {
             padding-left: 140px;
         }
@@ -143,19 +144,26 @@
         letter-spacing: 0.125rem;
         font-weight: 500;
         font-size: $font-med;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            text-decoration: none;
+            // opacity: 0.85;
+            transform: scale(1.2);
+        }
     }
 
-    .btn.btn-danger::before {
-        position: absolute;
-        content: '';
-        background: $darkBrown;
-        width: 100%;
-        height: 100%;
-        left: -100%;
-        top: 100%;
-        transition: .3s;
-        z-index: -1;
-    }
+    // .btn.btn-danger::before {
+    //     position: absolute;
+    //     content: '';
+    //     background: $darkBrown;
+    //     width: 100%;
+    //     height: 100%;
+    //     left: -100%;
+    //     top: 100%;
+    //     transition: .3s;
+    //     z-index: -1;
+    // }
 
     .btn.btn-danger:hover:before {
         top: 0;

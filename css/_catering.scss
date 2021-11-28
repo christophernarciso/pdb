@@ -3,6 +3,7 @@
     padding-top: 4rem;
     padding-bottom: 10rem;
     font-size: $font-lg;
+    overflow-x: hidden;
 
     @include breakpoint-down(medium) {
         font-size: $font-med;
@@ -74,7 +75,7 @@
 
     .msg_button,
     .call_button {
-        width: 200px;
+        width: 210px;
         padding-right: 20px;
     }
 
