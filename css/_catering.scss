@@ -1,21 +1,37 @@
 .catering {
     background-color: $wood;
-    // padding-top: 10rem;
+    padding-top: 4rem;
     padding-bottom: 10rem;
-    font-size: $font-med;
+    font-size: $font-lg;
 
-    h1, h2, h3,
-    p {
+    @include breakpoint-down(medium) {
+        font-size: $font-med;
+    }
+
+
+    h1 {
         text-align: center;
+        padding-bottom: 3rem;
+    }
 
-        @include breakpoint-up(medium) {
-            text-align: left;
-            margin-left: 1.5rem;
-        }
+    p {
+        text-align: left;
 
-        @include breakpoint-up(large) {
-            width: 70%;
-        }
+        // @include breakpoint-up(medium) {
+        //     text-align: left;
+        //     margin-left: 1.5rem;
+        // }
+
+        // @include breakpoint-up(large) {
+        //     width: 65%;
+        // }
+    }
+
+    h2,
+    h3 {
+        padding-top: 2rem;
+
+        text-align: center;
     }
 
     .cards {
@@ -37,7 +53,7 @@
         font-weight: 350;
         color: $darkBrown;
     }
-    
+
     .button {
         font-size: $font-med;
         text-align: center;
@@ -56,7 +72,8 @@
         justify-content: center;
     }
 
-    .msg_button, .call_button {
+    .msg_button,
+    .call_button {
         width: 200px;
         padding-right: 20px;
     }
@@ -65,5 +82,24 @@
         @include breakpoint-down(small) {
             padding-bottom: 2.5rem;
         }
+    }
+
+    &__text {
+        padding-left: 12px;
+
+        @include breakpoint-up(large) {
+            width: 65%;
+        }
+
+        @include breakpoint-down(medium) {
+            width: 90%;
+        }
+
+        @include breakpoint-down(small) {
+            width: 100%;
+        }
+
+        margin-left: auto;
+        margin-right: auto;
     }
 }

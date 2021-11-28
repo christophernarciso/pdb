@@ -58,7 +58,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .expand-animation {
-    animation: wipe-enter 3s 1;
+    animation: wipe-enter 1s 1;
   }
 }
 
@@ -103,6 +103,7 @@
 }
 
 @keyframes f {
+
   /*
            +-----A
            .     .
@@ -120,17 +121,96 @@
   5>6>7>8=ccw
   */
   from {
-    clip-path:polygon(
-    100% 0,100% 0,100% 0,100% 0,/*1,2,3,4*/
-    0 100%,0 100%,0 100%,0 100%);/*5,6,7,8*/
+    clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0,
+        /*1,2,3,4*/
+        0 100%, 0 100%, 0 100%, 0 100%);
+    /*5,6,7,8*/
   }
-  10%, to {
-    clip-path:polygon(
-    0 50%,0 0,100% 0,100% 50%,/*1,2,3,4*/
-    0 50%,0 100%,100% 100%,100% 50%);/*5,6,7,8*/  
+
+  10%,
+  to {
+    clip-path: polygon(0 50%, 0 0, 100% 0, 100% 50%,
+        /*1,2,3,4*/
+        0 50%, 0 100%, 100% 100%, 100% 50%);
+    /*5,6,7,8*/
   }
 }
 
 .poly-swipe {
-  animation:f 10s 2s; 
+  animation: f 10s 2s;
+}
+
+[data-scroll] {
+  transition: opacity 2s;
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+}
+
+[data-scroll="out"] {
+  opacity: 0;
+}
+
+@keyframes slide-in {
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slide-in {
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes slide-out {
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+.from-left {
+  transform: translateX(-100%);
+}
+
+.from-right {
+  transform: translateX(100%);
+}
+
+.from-left,
+.from-right {
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+.slide-out {
+  animation: slide-out 0.5s forwards;
+  -webkit-animation: slide-out 0.5s forwards;
+}
+
+.slide-in {
+  animation: slide-in 0.5s forwards;
+  -webkit-animation: slide-in 0.5s forwards;
 }

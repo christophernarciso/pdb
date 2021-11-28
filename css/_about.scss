@@ -1,33 +1,29 @@
 .about {
     background-color: $wood;
-    // padding: 5rem 5rem;
+    padding-top: 4rem;
     padding-bottom: 5rem;
     font-size: $font-med;
 
-    h1,
+    h1 {
+        text-align: center;
+    }
+
     p {
         padding-top: 2rem;
-        text-align: center;
-
-        // @include breakpoint-up(medium) {
-        //     text-align: left;
-        //     margin-left: 1.5rem;
-        // }
-
-        // @include breakpoint-up(large) {
-        //     width: 70%;
-        // }
+        text-align: left;
     }
 
     &__img {
         padding-top: 2rem;
         padding-bottom: 2rem;
+
         img {
             max-height: 100%;
             max-width: 100%;
-             /* remove extra space below image */
+            /* remove extra space below image */
             display: block;
             margin-left: .5rem;
+            border-radius: 5px;
 
 
             @include breakpoint-down(medium) {
@@ -35,5 +31,16 @@
                 margin-left: 0;
             }
         }
+    }
+
+    &__text {
+        @include breakpoint-down(medium) {
+            width: 90%;
+        }
+        @include breakpoint-up(large) {
+            width: 70%;
+        }
+        margin-left: auto;
+        margin-right: auto;
     }
 }

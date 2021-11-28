@@ -1,7 +1,6 @@
 .story {
     background-color: $wood;
     font-size: $font-med;
-    // padding-bottom: 2rem;
 
 
     h1,
@@ -12,6 +11,10 @@
         @include breakpoint-down(medium) {
             text-align: center;
         }
+    }
+    
+    .welcome {
+        padding-top: 2rem;
     }
 
     .slogan {
@@ -26,6 +29,10 @@
         font-weight: 350;
         text-align: left;
         width: 65%;
+
+        @include breakpoint-up(large) {
+            padding-bottom: 5rem;
+        }
 
         @include breakpoint-down(medium) {
             text-align: center;

@@ -59,7 +59,9 @@
               <a class="main-nav__sub-menu-item-link" href="./html/catering.html">Catering</a>
             </li>
             <li class="main-nav__sub-menu-item">
-              <a class="main-nav__sub-menu-item-link" href="./html/preorder.html">Preorder</a>
+              <a class="main-nav__sub-menu-item-link"
+                href="https://www.grubhub.com/restaurant/papa-diesels-bbq-991-sand-lake-rd-altamonte-springs/2373389"><img
+                  class="nav__service" src="./images/grubhub-logo.png" alt="Grubhub logo" />&nbsp;Order To Go</a>
             </li>
           </ul>
         </li>
@@ -116,26 +118,7 @@
         <a class="button" href="#">Order Now</a>
       </div>
     </div>
-    <!-- <div class="carousel" duration="7000">
-      <ul>
-        <li id="c1_slide1">
-        </li>
-        <li id="c1_slide2">
-        </li>
-        <li id="c1_slide3">
-        </li>
-        <li id="c1_slide4">
-        </li>
-      </ul>
-      <ol>
-        <li><a href="#c1_slide1"></a></li>
-        <li><a href="#c1_slide2"></a></li>
-        <li><a href="#c1_slide3"></a></li>
-        <li><a href="#c1_slide4"></a></li>
-      </ol>
-      <div class="prev">&lsaquo;</div>
-      <div class="next">&rsaquo;</div>
-    </div> -->
+
     <div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -182,11 +165,11 @@
     <div class="container-custom container-custom--pxy">
       <div class="container-custom imp-text">
         <!-- Title portion -->
-        <h1>Welcome to Papa Diesel's BBQ</h1>
+        <h1 class="welcome" data-scroll>Welcome to Papa Diesel's BBQ</h1>
         <!-- Slogan small text -->
-        <em class="slogan">The Best BBQ Food Truck in Altamonte Springs, FL</em>
+        <em class="slogan" data-scroll>The Best BBQ Food Truck in Altamonte Springs, FL</em>
         <!-- Story intro -->
-        <p class="story__intro">
+        <p class="story__intro" data-scroll>
           Papa Diesels BBQ is a family-owned and operated BBQ food truck in Altamonte Springs, FL. When it comes to the
           art of barbecue, we take great pride in our work. We strive to deliver complete customer satisfaction for
           every
@@ -200,15 +183,19 @@
       <!-- Story image section -->
       <div class="imgblk container-custom container-custom--pxy">
         <div class="story__schedule">
-          <h2>
-            <ion-icon name="calendar-outline"></ion-icon>&nbsp;Weekly Schedule</h3>
+          <h2 data-scroll>
+            <ion-icon name="calendar-outline"></ion-icon>&nbsp;Weekly Schedule
+          </h2>
         </div>
         <div class="story__imageblock container-custom">
           <p>
-            Stay connected with Papa Diesel's BBQ and schedule your next visit today. Take time to also follow our
-            social medias by selecting your prefered social option below!
+            <span data-scroll>
+              Stay connected with Papa Diesel's BBQ and schedule your next visit today. Take time to also follow our
+              social medias by selecting your prefered social option below!
+            </span>
+
             <br>
-            <span class="story__socials"><br>
+            <span class="story__socials from-right come-in"><br>
               <a href="https://www.instagram.com/papa_diesels_bbq/">
                 <ion-icon name="logo-instagram"></ion-icon><span class="social_text">Follow our Instagram.</span>
               </a>
@@ -221,7 +208,7 @@
             </span>
           </p>
           <!-- <img class="simg fade-out" src="./images/IMG_7891.jpg" /> -->
-          <div class="social_schedule">
+          <div class="social_schedule from-left come-in">
             <!-- <div class="taggbox-container"><div class="taggbox-socialwall" data-wall-id="74981" view-url="https://widget.taggbox.com/74981"></div><script src="https://widget.taggbox.com/embed.min.js" type="text/javascript"></script></div> -->
             <!-- <div class="taggbox-container" style="width:100%;height:100%;overflow: auto;">
               <div class="taggbox-socialwall" data-wall-id="74981" view-url="https://widget.taggbox.com/74981"></div>
@@ -248,8 +235,8 @@
       <!-- Social activity section -->
       <section class="activity" id="activity">
         <div class="container-custom container-custom--pb">
-          <h1>What to expect</h1>
-          <p class="activity__intro">
+          <h1 data-scroll>What to expect</h1>
+          <p data-scroll class="activity__intro">
             At Papa Diesel's BBQ, we use premium ingredients that are smoked to perfection. Try our selection of menu
             items and experience the quality of our Texas-style BBQ yourself. We use the utmost care to ensure that all
             of the food we prepare meets the highest standards. We guarantee you will not be disappointed
@@ -264,8 +251,8 @@
       <!-- end of social section -->
 
       <!-- Testimonial section -->
-      <div class="story__testimonial container-custom--px">
-        <h3>What Our Customers Think</h3>
+      <div class="story__testimonial container-custom--px" data-scroll>
+        <h3 data-scroll>What Our Customers Think</h3>
         <div class="testbg container-custom container-custom--pb">
           <div class="col-lg-10 offset-lg-1 pt-5 pb-5 text-dark">
             <div id="client-testimonial-carousel" class="carousel slide" data-ride="carousel" style="height:200px;">
@@ -552,9 +539,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+  <script>
+    ScrollOut();
+  </script>
   <script src="./js/init.js"></script>
   <script src="./js/navigation.js"></script>
-  <!-- <script src="./js/slider.js"></script> -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
