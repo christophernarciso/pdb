@@ -41,7 +41,12 @@
     }
 
     &__schedule {
+        margin-top: 5rem;
         margin-bottom: 2rem;
+
+        @include breakpoint-down(medium) {
+            margin-top: 7rem;
+        }
 
         ion-icon {
             font-size: $font-xl;
@@ -211,12 +216,12 @@
         }
 
         @include breakpoint-down(medium) {
-            padding-top: 5rem;
+            padding-top: 1rem;
             padding-bottom: 8rem;
         }
 
         @include breakpoint-down(small) {
-            padding-top: 5rem;
+            padding-top: 1rem;
             padding-bottom: 17rem;
         }
     }

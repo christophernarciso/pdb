@@ -1000,7 +1000,14 @@ ion-icon {
 }
 
 .story__schedule {
+  margin-top: 5rem;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 63.9375em) {
+  .story__schedule {
+    margin-top: 7rem;
+  }
 }
 
 .story__schedule ion-icon {
@@ -1222,14 +1229,14 @@ ion-icon {
 
 @media (max-width: 63.9375em) {
   .story__testimonial {
-    padding-top: 5rem;
+    padding-top: 1rem;
     padding-bottom: 8rem;
   }
 }
 
 @media (max-width: 39.9375em) {
   .story__testimonial {
-    padding-top: 5rem;
+    padding-top: 1rem;
     padding-bottom: 17rem;
   }
 }
