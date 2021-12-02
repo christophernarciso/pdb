@@ -900,8 +900,9 @@ ion-icon {
   margin-top: 220px;
   color: #F9F9F8;
   text-align: center;
-  text-shadow: 2px 2px #50413A;
-  font-family: 'Red Hat Display', sans-serif;
+  text-shadow: 2px 2px 12px black;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-weight: 700;
 }
 
 @media (max-width: 63.9375em) {
@@ -945,6 +946,12 @@ ion-icon {
   .hero .slide_info div a {
     width: 50%;
   }
+}
+
+.hero .slide_info .button:hover {
+  color: black;
+  background-color: #F9F9F8;
+  border: 2px solid #EF5226;
 }
 
 .story {
@@ -1562,9 +1569,9 @@ ion-icon {
 }
 
 .menu .menu_content p {
-  font-weight: 200;
-  font-size: 16px;
-  letter-spacing: 1px;
+  font-weight: 350;
+  font-size: 1.125rem;
+  text-align: left;
 }
 
 .menu .menu_btn.btn.btn-danger {
@@ -1601,11 +1608,8 @@ ion-icon {
   text-decoration: none;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-}
-
-.menu .btn.btn-danger:hover:before {
-  top: 0;
-  left: 0;
+  color: black;
+  background-color: #F9F9F8;
 }
 
 .preorder {

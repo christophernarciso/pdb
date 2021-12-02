@@ -112,9 +112,9 @@
     }
 
     .menu_content p {
-        font-weight: 200;
-        font-size: 16px;
-        letter-spacing: 1px;
+        font-weight: 350;
+        font-size: $font-med;
+        text-align: left;
     }
 
     .menu_btn.btn.btn-danger {
@@ -150,6 +150,8 @@
             text-decoration: none;
             // opacity: 0.85;
             transform: scale(1.2);
+            color: black;
+            background-color: $wood;
         }
     }
 
@@ -165,8 +167,8 @@
     //     z-index: -1;
     // }
 
-    .btn.btn-danger:hover:before {
-        top: 0;
-        left: 0;
-    }
+    // .btn.btn-danger:hover:before {
+    //     top: 0;
+    //     left: 0;
+    // }
 }

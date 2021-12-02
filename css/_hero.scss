@@ -207,8 +207,9 @@
             margin-top: 220px;
             color: $wood;
             text-align: center;
-            text-shadow: 2px 2px $darkBrown;
-            font-family: 'Red Hat Display', sans-serif;
+            text-shadow: 2px 2px 12px black;
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            font-weight: 700;
 
 
             @include breakpoint-down(medium) {
@@ -244,6 +245,12 @@
             font-family: 'Bebas Neue', 'Helvetica', 'Arial', sans-serif;
             letter-spacing: 0.125rem;
             border: 2px solid $wood;
+        }
+
+        .button:hover {
+            color: black;
+            background-color: $wood;
+            border: 2px solid $orange
         }
     }
 
